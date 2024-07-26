@@ -3,14 +3,14 @@ import FeatureCard from './FeatureCard';
 
 const features = [
   {
-    icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/17b109db26898c58cb0441651c32b1233b351769948683cb75914aa762b6b8a3?apiKey=6e8a6127015d45199b071b5b69920048&",
+    icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/c7846761cd8b4be5232e3aa89f52da8f8ff71921b0d6ac9a8970380167fb3a13?apiKey=6e8a6127015d45199b071b5b69920048&&apiKey=6e8a6127015d45199b071b5b69920048",
     title: "Vibrant Play Area",
     description: "A colorful and stimulating space for children to safely explore and play creatively and joyfully.",
     borderColor: "rose-300",
     bgColor: "rose-300"
   },
   {
-    icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/af566eb3908817fc7412cce02eec6726ccf9e7277e04f3b2b137f06dab35d33b?apiKey=6e8a6127015d45199b071b5b69920048&",
+    icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/94e07f3b250b678509172f4ee96604f03a1563d22072bb7c246a08bcad83a895?apiKey=6e8a6127015d45199b071b5b69920048&&apiKey=6e8a6127015d45199b071b5b69920048",
     title: "Dedicated Caregivers",
     description: "Caregivers who nurture children with the care and attention of a family member.",
     borderColor: "sky-400",
@@ -45,7 +45,7 @@ const features = [
     bgColor: "rose-400"
   },
   {
-    icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/b11c5e45d6c01728e5c6b3cd6a4fb61dad6fea94ec529dc7c2537df4d4c2e674?apiKey=6e8a6127015d45199b071b5b69920048&",
+    icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/d1ad5871a07b145543f24e8f0a84188f59f861b86daeea1e60486f2efd51135a?apiKey=6e8a6127015d45199b071b5b69920048&&apiKey=6e8a6127015d45199b071b5b69920048",
     title: "Transport Available",
     description: "Convenient transportation options for easy drop-off and pick-up.",
     borderColor: "orange-300",
@@ -63,8 +63,8 @@ const features = [
 function FeaturesSection() {
   return (
     <section className="mt-20 max-w-[1135px] mx-auto">
-      <h2 className="text-5xl font-semibold text-pink-400 max-md:mt-10 max-md:text-4xl">
-        Agape <span className="text-pink-400">Features</span>
+      <h2 className="text-5xl font-semibold text-center max-md:mt-10 max-md:text-4xl">
+        <span className="text-black">Agape</span> <span className="text-pink-400">Features</span>
       </h2>
       <p className="mt-11 text-2xl font-medium text-center text-black max-md:mt-10 max-md:max-w-full">
         See what makes Agape Garden Play School special <br /> with our unique features.
@@ -79,3 +79,4 @@ function FeaturesSection() {
 }
 
 export default FeaturesSection;
+

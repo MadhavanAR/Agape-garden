@@ -3,11 +3,13 @@ import Header from './Header';
 import Hero from './Hero';
 import EarlyEducationSection from './EarlyEducationSection';
 import FeaturesSection from './FeaturesSection';
-import VideoTourSection from './VideoTourSection';
+import VideoTour from './VideoTour';
 import TestimonialSection from './TestimonialSection';
 import FAQSection from './FAQSection';
 import GallerySection from './GallerySection';
+import AdmissionEnquiry from './AdmissionEnquiry';
 import Footer from './Footer';
+
 
 function MainContent() {
   return (
@@ -17,10 +19,11 @@ function MainContent() {
       <Hero />
       <EarlyEducationSection />
       <FeaturesSection />
-      <VideoTourSection />
+      <VideoTour/>
       <TestimonialSection />
-      <FAQSection />
       <GallerySection />
+      <FAQSection />
+      <AdmissionEnquiry/>
       <Footer />
     </div>
   );
