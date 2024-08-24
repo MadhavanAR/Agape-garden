@@ -192,7 +192,7 @@ body {
 }
 .about-text {
   width: 760px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 .about-text h1 {
   font-size: 32px;
@@ -356,16 +356,15 @@ body {
 
 .footer-container {
   letter-spacing: 1px;
- 
+
   font-size: 16px;
   color: #decdff;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 50px;
- 
 }
-.top{
+.top {
   display: flex;
 }
 .logo img {
@@ -382,31 +381,31 @@ body {
 .quick-links {
   width: 200px;
   letter-spacing: 1px;
- 
+
   padding-left: 10%;
   color: #decdff;
 }
-.quick-links p{
+.quick-links p {
   letter-spacing: 2px;
- 
-  font-weight:bold;
+
+  font-weight: bold;
 }
 .quick-links a {
-  font-weight:normal;
+  font-weight: normal;
   padding-bottom: 10px;
-  
+
   color: #decdff;
   display: block;
   text-decoration: none;
 }
-.address{
-width: 250px;
-line-height: 22px;
+.address {
+  width: 250px;
+  line-height: 22px;
 }
-.address p{
+.address p {
   font-weight: normal;
 }
-.address h5{
+.address h5 {
   margin-top: 16px;
   margin-bottom: 16px;
   font-size: 16px;
@@ -418,8 +417,100 @@ line-height: 22px;
   background-color: hsl(0, 24%, 93%); /* Adjust color to match your design */
   margin-top: 10px; /* Adjust spacing between navbar and line */
 }
-.bottom{
+.bottom {
   text-align: center;
   font-weight: lighter;
   font-size: 20px;
+}
+
+/*features*/
+.features-container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.heading {
+  text-align: center;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading h1 {
+  font-size: 40px;
+}
+.heading p {
+  font-size: 22px;
+  font-weight: lighter;
+}
+.feature-cards {
+  display: block;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.card {
+  width: 260px;
+  height: 300px;
+  border: #f55daf solid 2px;
+  border-radius: 20px;
+  text-align: center;
+}
+.card-text {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #4a4a4a;
+  font-weight: normal;
+  word-spacing: 2px;
+}
+.card img {
+  height: 82px;
+  width: 82px;
+  padding-top: 15%;
+}
+
+/*parent-speak*/
+.parent-speak-container{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.pscard-container{
+  justify-content: space-between;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+.review-box{
+  padding-top: 0%;
+  display: block;
+  text-align: center;
+}
+.review-box #profile{
+  position: relative;
+  top: 50px;
+}
+.pscard{
+  display: block;
+  width: 700px;
+  height: 300px;
+  border: #f55daf solid 2px;
+  border-radius: 20px;
+}
+.pscard h1{
+  padding-top: 40px;
+  margin-bottom: 0px;
+}
+.pscard-container button{
+  width:44px ;
+  height: 44px;
+  border-style: none;
 }

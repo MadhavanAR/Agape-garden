@@ -14,7 +14,9 @@ export default function NavBar() {
           <a href="Gallery">Gallery</a>
           <button>Enquire now</button>
         </div>
-        <div className="navbar-line"></div>
+        <div className="navbar-line">
+         
+        </div>
       </div>
     );
   }

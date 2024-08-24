@@ -33,6 +33,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      <img src="./images/curve.png" alt="curve" style={{width:"100%"}}></img>
       <div className="about-container2">
         <div className="mission">
           <div className="mission-container">
