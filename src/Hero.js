@@ -12,7 +12,7 @@ export default function Hero() {
             Build A Foundation <br /> For A Lifetime Learning
           </p>
           <button onClick={""}>
-            Know who we are <i>&#10148;</i>
+              Know who we are <i>&#10148;</i>
           </button>
 
           <div className="text">
