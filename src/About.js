@@ -29,7 +29,7 @@ export default function About() {
             </p>
           </div>
           <div className="about-image">
-            <img src="./image/poly1.png" alt="img"></img>
+            <img src="./images/poly1.png" alt="img"></img>
           </div>
         </div>
       </div>

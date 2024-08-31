@@ -64,6 +64,7 @@ body {
 .hero-text #text1 {
   font-size: 48px;
   margin-top: 10px;
+  font-weight: 600;
 }
 .hero-text h2 {
   font-size: 64px;
@@ -78,19 +79,13 @@ body {
   display: flex;
   align-items: center;
 }
-
-.hero-text button {
-  margin-top: 30px;
-  width: 250px;
-  height: 47px;
-  font-size: 17px;
-  text-align: left;
-  background: #f55daf;
-  border-radius: 7px;
-  border: 3px solid #0c0c0c;
-}
-.hero-text button i {
-  padding-left: 25px;
+.hero-bt {
+  background-color: transparent;
+  border: none;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  padding: 0;
 }
 
 .hero-images {
@@ -131,7 +126,7 @@ body {
 
 .white-box {
   height: 370px;
-  width: 642px;
+  width: 570px;
   background-color: #feeef9;
   border: #0c0c0c solid 4px;
   border-radius: 30px;
@@ -159,6 +154,7 @@ body {
   height: 48px;
   width: 144px;
   background: #89e3ff;
+  cursor: pointer;
 }
 .box-image {
   display: flex;
@@ -167,14 +163,14 @@ body {
   margin-left: 50px;
 }
 .box-image2 #img1 {
-  padding-left: 70%;
+  padding-left: 60%;
   padding-top: 40px;
   height: 114px;
   width: 114px;
 }
 .box-image2 #img2 {
   padding-top: 30px;
-  padding-left: 20%;
+  padding-left: 8%;
   height: 400px;
   width: 400px;
 }
@@ -476,41 +472,243 @@ body {
 }
 
 /*parent-speak*/
-.parent-speak-container{
-  width: 80%;
+.parent-speak-container {
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
-.pscard-container{
+.pscard-container {
+  padding-top: 20px;
   justify-content: space-between;
-  height: fit-content;
+  height: 350px;
   display: flex;
   align-items: center;
 }
-.review-box{
+.review-box {
   padding-top: 0%;
   display: block;
   text-align: center;
+  height: fit-content;
 }
-.review-box #profile{
+.review-box #profile {
+  height: 100px;
+  width: 101px;
   position: relative;
   top: 50px;
 }
-.pscard{
-  display: block;
-  width: 700px;
-  height: 300px;
+.pscard {
+  width: 600px;
+  height: 350px;
   border: #f55daf solid 2px;
   border-radius: 20px;
+  border-bottom: #f55daf solid 5px;
+  border-left: #f55daf solid 5px;
 }
-.pscard h1{
+.pscard h1 {
   padding-top: 40px;
   margin-bottom: 0px;
 }
-.pscard-container button{
-  width:44px ;
+.pscard-container button {
+  width: 44px;
   height: 44px;
   border-style: none;
+}
+
+.review {
+  width: 550px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.review p {
+  font-weight: lighter;
+  word-spacing: 2px;
+}
+
+/* faq*/
+
+.bg-faq {
+  width: 100%;
+  height: 550px;
+  background-color: #ffd2ea;
+  padding-top: 70px;
+  display: flex;
+}
+
+.faq-container {
+  transition: height 0.3s ease;
+  width: 870px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-content {
+  text-align: justify;
+  margin-left: 110px;
+  transition: height 0.3s ease;
+}
+
+.faq-content p {
+  color: #f55daf;
+  padding-top: 7px;
+  width: 90%;
+  padding-bottom: 10px;
+  overflow: hidden;
+  transition: height 0.3s ease, padding 0.3s ease;
+  font-weight: lighter;
+}
+.faq-line {
+  width: 90%;
+  height: 2px; /* Adjust the height to make the line thicker or thinner */
+  background-color: #e490b7;
+}
+
+#curvyline {
+  width: 17%;
+  position: relative;
+  left: 58%;
+  bottom: 25px;
+}
+
+.transparent-button {
+  background-color: transparent; /* Makes the button background transparent */
+  border: none; /* Removes the border */
+  cursor: pointer; /* Changes the cursor to pointer on hover */
+  padding: 10px 20px; /* Adjust padding as needed */
+  color: #007bff; /* Adjust text color as needed */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+#puzzle {
+  width: 70px;
+  height: 90px;
+  position: relative;
+  top: 22%;
+  left: 15%;
+}
+
+#tower {
+  width: 70px;
+  height: 180px;
+  position: relative;
+  top: 40%;
+  right: 15%;
+}
+
+.admission-main {
+  text-align: center;
+  height: 600px;
+}
+
+.admission-content {
+  width: 70%;
+  height: 60%;
+  display: flex;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#strike {
+  position: relative;
+  width: 140px;
+  height: 20px;
+  left: 7%;
+  bottom: 6%;
+}
+.adm-details {
+  width: 50%;
+  height: 60%;
+  text-align: left;
+  color: #FF0099;
+  word-spacing: 2px;
+  
+}
+
+.adm-details p {
+  margin-left: 40px;
+  margin-right: 20px;
+  
+}
+
+.adm-text img {
+  height: 40px;
+  width: 50px;
+}
+.adm-text {
+  align-items: center;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.adm-cred {
+  border:#f55daf solid 1px;
+  border-radius: 8px;
+  width: 50%;
+}
+
+#name{
+  width: 70%;
+  height: 20px;
+  border: #f55daf solid 1px;
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+#submit{
+  border-radius: 15px;
+  width: 73%;
+  height: 30px;
+  background-color: #f55daf;
+  border: none;
+  margin-top: 10px;
+}
+
+.adm-cred h4 {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 50px;
+  color: #f55daf;
+  font-weight: lighter;
+}
+
+
+
+
+
+/*gallery*/
+
+.gallery-container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+.gallery-images {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+.gallery-images img {
+  padding-bottom: 10px;
+}
+#gal-line {
+  width: 140px;
+  height: 13px;
+  position: relative;
+  bottom: 37px;
+  left: 40px;
+}
+.gallery-container button {
+  width: 160px;
+  height: 40px;
+  border-radius: 19px;
+  border: #0c0c0c solid 1.5px;
+  background-color: #f55daf;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
 }

@@ -11,8 +11,8 @@ export default function Hero() {
           <p id="text1">
             Build A Foundation <br /> For A Lifetime Learning
           </p>
-          <button onClick={""}>
-            Know who we are <i>&#10148;</i>
+          <button className="hero-bt">
+            <img src="./images/button.png" alt="button"/>
           </button>
 
           <div className="text">
@@ -42,8 +42,7 @@ export default function Hero() {
                 High quality early childhood education and care gives children
                 the best start in life. It provides important opportunities to
                 learn and develop. Early childhood education and care can help
-                your child make friends, develop independence and learn new
-                routines.
+                your child make friends, develop ind...
               </p>
               <div className="box-image">
                 <img src="./images/Group.png" alt="box-image"></img>

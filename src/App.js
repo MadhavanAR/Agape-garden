@@ -5,6 +5,9 @@ import Footer from "./footer";
 import Features from "./Features";
 import ParentSpeak from "./ParentSpeak";
 import { Route, Routes } from "react-router-dom";
+import Faq from "./Faq";
+import Admission from "./Admission";
+import Gallery from "./Gallery";
 export default function App() {
   return (
     <div>
@@ -15,6 +18,9 @@ export default function App() {
       </Routes>
       <Features />
       <ParentSpeak />
+      <Gallery />
+      <Faq />
+      <Admission />
       <Footer />
     </div>
   );
