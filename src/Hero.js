@@ -11,8 +11,13 @@ export default function Hero() {
           <p id="text1">
             Build A Foundation <br /> For A Lifetime Learning
           </p>
+<<<<<<< HEAD
           <button className="hero-bt">
             <img src="./images/button.png" alt="button"/>
+=======
+          <button onClick={""}>
+              Know who we are <i>&#10148;</i>
+>>>>>>> main
           </button>
 
           <div className="text">
