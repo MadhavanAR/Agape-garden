@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
 export default function Hero() {
+  const navigate = useNavigate();
+
   return (
     <div className="main">
       <div className="hero-container">
@@ -11,8 +14,8 @@ export default function Hero() {
           <p id="text1">
             Build A Foundation <br /> For A Lifetime Learning
           </p>
-          <button className="hero-bt">
-            <img src="./images/button.png" alt="button"/>
+          <button className="hero-bt" onClick={() => navigate("/About")}>
+            <img src="./images/button.png" alt="button" />
           </button>
 
           <div className="text">
@@ -36,17 +39,19 @@ export default function Hero() {
               Why Early Education
               <br /> Matters
             </p>
-            <div className="white-box">
-              <p>The Benefits of Early Education</p>
-              <p id="box-text">
-                High quality early childhood education and care gives children
-                the best start in life. It provides important opportunities to
-                learn and develop. Early childhood education and care can help
-                your child make friends, develop ind...
-              </p>
-              <div className="box-image">
-                <img src="./images/Group.png" alt="box-image"></img>
-                <button>Read more</button>
+            <div className="blue-box">
+              <div className="white-box">
+                <p>The Benefits of Early Education</p>
+                <p id="box-text">
+                  High quality early childhood education and care gives children
+                  the best start in life. It provides important opportunities to
+                  learn and develop. Early childhood education and care can help
+                  your child make friends, develop ind...
+                </p>
+                <div className="box-image">
+                  <img src="./images/Group.png" alt="box-image"></img>
+                  <button>Read more</button>
+                </div>
               </div>
             </div>
           </div>

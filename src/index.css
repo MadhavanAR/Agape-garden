@@ -28,6 +28,7 @@ body {
   background-color: #f55daf;
   border-radius: 10px;
   border-color: rgba(0, 0, 0, 0.767);
+  cursor: pointer;
 }
 .navbar img {
   width: 98px;
@@ -124,12 +125,20 @@ body {
   width: 700px;
 }
 
+.blue-box{
+  height: 390px;
+  width: 590px;
+background-color: #89E3FF;
+  border-radius: 35px;
+}
+
 .white-box {
   height: 370px;
   width: 570px;
   background-color: #feeef9;
-  border: #0c0c0c solid 4px;
-  border-radius: 30px;
+  border-radius: 35px;
+  border: #0c0c0c solid 2px;
+ 
 }
 .white-box p {
   color: #0c0c0c;
@@ -143,6 +152,7 @@ body {
   font-size: 24px;
   font-weight: 200;
   text-align: justify;
+  
 }
 .white-box button {
   font-size: 18px;
