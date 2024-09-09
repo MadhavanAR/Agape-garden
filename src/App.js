@@ -8,9 +8,11 @@ import ParentSpeak from "./ParentSpeak";
 import Faq from "./Faq";
 import Admission from "./Admission";
 import Gallery from "./Gallery";
-import Footer from "./footer"
+import Footer from "./Footer";
+import PicFlowGallery from "./PicFlowGallery";
+import Readmore from "./Readmore";
 
-function AppContent() {
+function AppContent({ admissionRef }) {
   const location = useLocation();
   const featuresRef = useRef(null);
   const galleryRef = useRef(null);
@@ -18,49 +20,71 @@ function AppContent() {
 
   useEffect(() => {
     if (location.pathname === "/Features" && featuresRef.current) {
-      featuresRef.current.scrollIntoView({ behavior: 'smooth' });
+      featuresRef.current.scrollIntoView({ behavior: "smooth" });
     }
     if (location.pathname === "/Gallery" && galleryRef.current) {
-      galleryRef.current.scrollIntoView({ behavior: 'smooth' });
+      galleryRef.current.scrollIntoView({ behavior: "smooth" });
     }
-    }, [location.pathname]);
+    if (location.pathname === "/Admission" && admissionRef.current) {
+      admissionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location.pathname, admissionRef]);
 
   return (
     <div>
       <Routes>
-        <Route path="/" element={
-          <>
-            <Hero />
-            <Features ref={featuresRef} />
-            <ParentSpeak />
-            <Gallery ref={galleryRef} />
-            <Faq ref={faqRef} />
-            <Admission />
-          </>
-        } />
-        <Route path="/About" element={<><About />< Footer /></>} />
-        <Route path="/Gallery" element={
-          <>
-            <Hero />
-            <Features ref={featuresRef} />
-            <ParentSpeak />
-            <Gallery ref={galleryRef} />
-            <Faq ref={faqRef} />
-            <Admission />
-          </>
-        } />
-        <Route path="/Features" element={
-          <>
-            <Hero />
-            <Features ref={featuresRef} />
-            <ParentSpeak />
-            <Gallery ref={galleryRef} />
-            <Faq ref={faqRef} />
-            <Admission />
-          </>
-        } />
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Features ref={featuresRef} />
+              <ParentSpeak />
+              <Gallery ref={galleryRef} />
+              <Faq ref={faqRef} />
+              <Admission ref={admissionRef} />
+            </>
+          }
+        />
+        <Route
+          path="/About"
+          element={
+            <>
+              <About />
+            </>
+          }
+        />
+        <Route
+          path="/Gallery"
+          element={
+            <>
+              <Hero />
+              <Features ref={featuresRef} />
+              <ParentSpeak />
+              <Gallery ref={galleryRef} />
+              <Faq ref={faqRef} />
+              <Admission ref={admissionRef} />
+            </>
+          }
+        />
+        <Route
+          path="/Features"
+          element={
+            <>
+              <Hero />
+              <Features ref={featuresRef} />
+              <ParentSpeak />
+              <Gallery ref={galleryRef} />
+              <Faq ref={faqRef} />
+              <Admission ref={admissionRef} />
+            </>
+          }
+        />
         <Route path="/Faq" element={<Faq ref={faqRef} />} />
-        <Route path="/Admission" element={<Admission />} />
+        <Route path="/Admission" element={<Admission ref={admissionRef} />} />
+        <Route path="/PicflowGallery" element={<PicFlowGallery />} />
+        <Route path="/Readmore" element={<Readmore />} /> {/* Ensure this route is added */}
+        <Route path="/About" element={<About />} />
       </Routes>
       <Footer />
     </div>
@@ -69,17 +93,18 @@ function AppContent() {
 
 export default function App() {
   const faqRef = useRef(null);
+  const admissionRef = useRef(null);
 
   const handleEnquireClick = () => {
-    if (faqRef.current) {
-      faqRef.current.scrollIntoView({ behavior: 'smooth' });
+    if (admissionRef.current) {
+      admissionRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <>
       <NavBar onEnquireClick={handleEnquireClick} />
-      <AppContent faqRef={faqRef} />
+      <AppContent admissionRef={admissionRef} faqRef={faqRef} />
     </>
   );
 }

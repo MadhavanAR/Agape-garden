@@ -18,5 +18,3 @@ export default function NavBar({ onEnquireClick }) {
     </div>
   );
 }
-
-
