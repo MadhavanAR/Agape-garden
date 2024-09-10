@@ -41,11 +41,12 @@ export default function ParentSpeak() {
   return (
     <div className="parent-speak-container">
       <div className="heading">
+        <img src="./images/speakstrike.png" alt="speakstrike" id="speakstrike" />
         <h1>
           <span style={{ color: "black" }}>Parents </span>
           <span style={{ color: "#F55DAF" }}>Speak</span>
         </h1>
-        <p>
+        <p style={{paddingTop:"12px"}}>
           Read what parents love about our play school and how it positively
           impacts their children's growth!
         </p>
