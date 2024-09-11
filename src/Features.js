@@ -1,8 +1,13 @@
-export default function Features() {
+
+import React, { forwardRef } from 'react';
+
+const Features = forwardRef((props, ref) =>{
   return (
-    <div className="features-container">
+    <section ref={ref}>
+    <div className="features-container" id="Features">
       <div className="heading">
-        <h1>
+      <img src='./images/strikeline.png' alt='strikeline' id='strikeline' />
+      <h1>
           <span style={{ color: "black" }}>Agape </span>
           <span style={{ color: "#F55DAF" }}>Features</span>
         </h1>
@@ -92,5 +97,8 @@ export default function Features() {
         </div>
       </div>
     </div>
+    </section>
   );
-}
+});
+
+export default Features;
