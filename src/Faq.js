@@ -18,38 +18,38 @@ const Faq = forwardRef((props, ref) => {
 
   return (
     <div>
-    <div className='bg-faq'>
-      <img src='./images/tower-icon.png' alt='tower' id='tower' />
-    <img src='./images/puzzle-icon.png' alt='puzzle' id='puzzle' />
-    <img src='./images/curvyline.png' alt='curvyline' id='curvyline' />
-    <div ref={ref} className="faq-container">
-      <div className="heading">
-        <h1>
-          <span className="black-text">Frequently Asked </span>
-          <span className="pink-text" style={{color:"#F55DAF"}}>Questions</span>
-        </h1>
+      <div className='bg-faq'>
+        <img src='./images/tower-icon.png' alt='tower' id='tower' />
+        <img src='./images/puzzle-icon.png' alt='puzzle' id='puzzle' />
+        <img src='./images/curvyline.png' alt='curvyline' id='curvyline' />
+        <div ref={ref} className="faq-container">
+          <div className="heading">
+            <h1 style={{paddingBottom:"50px"}}>
+              <span className="black-text">Frequently Asked </span>
+              <span className="pink-text" style={{color:"#F55DAF"}}>Questions</span>
+            </h1>
+          </div>
+          <div className="faq-content">
+            {sentences.map(({ id, q, paragraph }) => (
+              <div key={id} className="faq-item">
+                <div className="faq-question-container">
+                  <p className="faq-question">{q}</p>
+                  <button onClick={() => toggleParagraph(id)} className="transparent-button">
+                    {visibleId === id ? (
+                      <img src="./images/minus.png" alt="minus" />
+                    ) : (
+                      <img src="./images/plus.png" alt="plus" />
+                    )}
+                  </button>
+                </div>
+                {visibleId === id && <p style={{color:"#F55DAF"}}> {paragraph}</p>}
+                <div className="faq-line"></div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-      <div className="faq-content" style={{justifyContent:"space-beween"}}>
-        {sentences.map(({ id, q, paragraph }) => (
-          <div key={id}>
-            <p className="faq-question">
-              {q}
-              <button onClick={() => toggleParagraph(id)} className="transparent-button" >
-                {visibleId === id ? (
-                  <img src="./images/minus.png" alt="minus" />
-                ) : (
-                  <img src="./images/plus.png" alt="plus" />
-                )}
-              </button>
-            </p>
-            {visibleId === id && <p style={{color:"#F55DAF"}}> {paragraph}</p>}
-            <div className="faq-line"></div>
-            </div>
-        ))}
-      </div>
-    </div>
-    </div>
-    <img src='./images/light-pink.png' alt='waves' style={{width:"100%"}} />
+      <img src='./images/light-pink.png' alt='waves' style={{width:"100%"}} />
     </div>
   );
 });

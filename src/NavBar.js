@@ -14,7 +14,6 @@ export default function NavBar({ onEnquireClick }) {
         <Link to="/Gallery">Gallery</Link>
         <button onClick={onEnquireClick}>Enquire now</button>
       </div>
-      <div className="navbar-line"></div>
-    </div>
+      </div>
   );
 }

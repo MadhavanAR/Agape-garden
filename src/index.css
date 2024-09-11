@@ -1,15 +1,24 @@
 body {
+  margin: 0;
   font-family: "Inter", sans-serif;
   background: #feeef9;
   font-weight: 600;
 }
 
 .navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   max-height: 78px;
+  border-bottom:#0c0c0c solid 2px;
+  background-color: #feeef9;;
   margin-right: 20px;
+  position: fixed;
+  z-index: 1000; /* Ensures the navbar stays above other content */
 }
+
 .navbar a {
   color: black;
   font-size: 18px;
@@ -18,11 +27,11 @@ body {
   margin-right: 60px;
 }
 
-.navbar a:hover {
-  background-color: #f55dafAF; /* Change background color to pink on hover */ 
-  border-radius: 5px;
+.navbar a:hover{
+  background-color:#F55DAF;
+  padding: 8px;
+  border-radius: 25px;
 }
-
 
 .navbar button {
   margin-left: 0px;
@@ -37,21 +46,12 @@ body {
   align-items: center;
 }
 
-
-
 .navbar img {
   width: 98px;
   height: 62px;
-  padding-left: 152px;
-  padding-right: 150px;
+  padding-left: 112px;
+  padding-right: 172px;
   top: 6px;
-}
-
-.navbar-line {
-  width: 100%;
-  height: 2px; /* Adjust the height to make the line thicker or thinner */
-  background-color: hsl(0, 0%, 0%); /* Adjust color to match your design */
-  margin-top: 2px; /* Adjust spacing between navbar and line */
 }
 
 .hero-container {
@@ -60,7 +60,7 @@ body {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 50px;
+  padding-top: 120px;
   padding-bottom: 100px;
 }
 .hero-text {
@@ -90,13 +90,12 @@ body {
   align-items: center;
 }
 #hero-bt {
-  background-color: transparent; 
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 30px;
   cursor: pointer;
   border: none;
- 
-  padding: 0;
+  border-color: black;
+ padding: 0;
 }
 
 .hero-images {
@@ -578,6 +577,7 @@ width: 170px;
   margin-right: auto;
   position: relative;
   right:160px;
+
 }
 
 .faq-content {
@@ -588,17 +588,19 @@ width: 170px;
 
 .faq-content p {
   color: black;
-  padding-top: 7px;
+  padding-top: 2px;
   width: 90%;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   overflow: hidden;
   transition: height 0.3s ease, padding 0.3s ease;
   font-weight: lighter;
 }
+
 .faq-line {
   width: 90%;
   height: 2px; /* Adjust the height to make the line thicker or thinner */
   background-color: #e490b7;
+  margin-top:10px;
 }
 
 #curvyline {
@@ -609,12 +611,28 @@ width: 170px;
   height: 22px;
 }
 
+/* Add these styles */
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-question-container {
+  display: flex;
+  justify-content: space-between; /* Align items to the edges of the container */
+  align-items: center; /* Align items vertically centered */
+}
+
+.faq-question {
+  margin: 0;
+  flex-grow: 1; /* Allows the question to take up the remaining space */
+}
+
 .transparent-button {
   background-color: transparent; /* Makes the button background transparent */
   border: none; /* Removes the border */
   cursor: pointer; /* Changes the cursor to pointer on hover */
-  padding: 10px 20px; /* Adjust padding as needed */
-  font-size: 16px; /* Adjust font size as needed */
+  margin-right: 65px; /* Remove padding to ensure button size fits the image */
+  font-size: 0; /* Remove font size if no text is used */
 }
 
 

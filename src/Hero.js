@@ -23,7 +23,7 @@ export default function Hero() {
           <p id="text1">
             Build A Foundation <br /> For A Lifetime Learning
           </p>
-          <button className="hero-bt">
+          <button id="hero-bt" onClick={handleKnowMoreClick}>
             <img src="./images/button.png" alt="button"/>
           </button>
 
