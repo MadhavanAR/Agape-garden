@@ -1,0 +1,61 @@
+
+/*features*/
+.features-container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  #strikeline {
+    position: relative;
+    left: 12%;
+    top: 95px;
+    height: 20px;
+    width: 170px;
+  }
+  
+  .heading {
+    text-align: center;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .heading h1 {
+    font-size: 40px;
+  }
+  .heading p {
+    font-size: 22px;
+    font-weight: lighter;
+  }
+  .feature-cards {
+    display: block;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .card {
+    width: 260px;
+    height: 300px;
+    border: #f55daf solid 2px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .card-text {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #4a4a4a;
+    font-weight: normal;
+    word-spacing: 2px;
+  }
+  .card img {
+    height: 82px;
+    width: 82px;
+    padding-top: 15%;
+  }
+  

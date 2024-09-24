@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-
+import './parent-speak.css';
 const arr = [
   {
     img: "./images/profile-pic.png",
@@ -52,7 +52,7 @@ export default function ParentSpeak() {
         </p>
       </div>
       <div className="pscard-container">
-        <button onClick={handlePrevious}>
+        <button id="left-button" onClick={handlePrevious}>
           <img src="./images/left.png" alt="Previous" />
         </button>
         <div className="review-box">
@@ -68,7 +68,7 @@ export default function ParentSpeak() {
             </div>
           </div>
         </div>
-        <button onClick={handleNext}>
+        <button id="right-button" onClick={handleNext}>
           <img src="./images/right.png" alt="Next" />
         </button>
       </div>

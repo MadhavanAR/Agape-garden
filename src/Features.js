@@ -1,6 +1,5 @@
-
 import React, { forwardRef } from 'react';
-
+import './features.css';
 const Features = forwardRef((props, ref) =>{
   return (
     <section ref={ref}>

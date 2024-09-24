@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-
+import './admission.css'
 const Admission = forwardRef((props, ref) => {
   return (
     <div className="admission-main" ref={ref}>

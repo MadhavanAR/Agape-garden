@@ -1,0 +1,35 @@
+.title {
+    text-align: center;
+    font-weight: 600px;
+    font-family: sans-serif;
+    padding-top: 25px;
+  }
+  
+  .title-image {
+    height: 239px;
+    width: 362px;
+    margin-left: 90px;
+  }
+  
+  .title-text1 {
+    text-align: justify;
+    line-height: 1.5;
+    margin-left: 20px;
+    margin-right: 90px;
+    word-spacing: 4px;
+  }
+  
+  .title-text2 {
+    text-align: justify;
+    line-height: 1.5;
+    margin-left: 90px;
+    margin-right: 90px;
+    position: relative;
+    bottom: 25px;
+    word-spacing: 4px;
+  }
+  
+  .background {
+    display: flex;
+  }
+  

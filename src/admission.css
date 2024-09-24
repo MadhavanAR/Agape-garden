@@ -1,0 +1,102 @@
+.admission-main {
+    text-align: center;
+    height: 600px;
+  }
+  
+  .admission-content {
+    width: 70%;
+    height: 60%;
+    display: flex;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #strike {
+    position: relative;
+    width: 140px;
+    height: 20px;
+    left: 8%;
+    bottom: 6%;
+  }
+  .adm-details {
+    width: 50%;
+    height: 60%;
+    text-align: left;
+    color: #ff0099;
+    word-spacing: 2px;
+  }
+  
+  .adm-details p {
+    margin-left: 40px;
+    margin-right: 20px;
+  }
+  
+  .adm-text img {
+    height: 40px;
+    width: 50px;
+  }
+  .adm-text {
+    align-items: center;
+    display: flex;
+    padding-bottom: 20px;
+  }
+  
+  .adm-cred {
+    border: #f55daf solid 1px;
+    border-radius: 8px;
+    width: 50%;
+  }
+  
+  #name {
+    width: 70%;
+    height: 20px;
+    border: #f55daf solid 1px;
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 20px;
+  }
+  
+  #email {
+    width: 70%;
+    height: 20px;
+    border: #f55daf solid 1px;
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 20px;
+  }
+  
+  #phone {
+    width: 70%;
+    height: 20px;
+    border: #f55daf solid 1px;
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 20px;
+  }
+  
+  #pin {
+    width: 70%;
+    height: 20px;
+    border: #f55daf solid 1px;
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 20px;
+  }
+  
+  #submit {
+    border-radius: 15px;
+    width: 73%;
+    height: 30px;
+    background-color: #f55daf;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .adm-cred h4 {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 50px;
+    color: #f55daf;
+    font-weight: lighter;
+  }  

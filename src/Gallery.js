@@ -1,6 +1,6 @@
   import React, { forwardRef } from 'react';
   import { useNavigate } from 'react-router-dom'; // Import useNavigate
-
+  import './gallery.css';
   const Gallery = forwardRef((props, ref) => {
     const navigate = useNavigate(); // Initialize useNavigate
 

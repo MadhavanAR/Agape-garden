@@ -1,5 +1,5 @@
 import React, { forwardRef, useState } from 'react';
-
+import './faq.css';
 const Faq = forwardRef((props, ref) => {
   const [visibleId, setVisibleId] = useState(null);
 

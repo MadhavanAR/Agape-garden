@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import './Hero.css';
 
 export default function Hero() {
   const navigate = useNavigate();
@@ -28,9 +29,9 @@ export default function Hero() {
           </button>
 
           <div className="text">
-            <img src="./images/image-one.png" alt="s1" />
-            <img src="./images/image-two.png" alt="s2" />
-            <img src="./images/image-three.png" alt="s3" />
+            <img src="./images/image-three.png" alt="s1" id="img1"/>
+            <img src="./images/image-two.png" alt="s2" id="img2" />
+            <img src="./images/image-one.png" alt="s3" id="img3"/>
             <h2>350+</h2>
             <h3>
               Happy and <br /> Engaged kids
@@ -65,8 +66,8 @@ export default function Hero() {
             </div>
           </div>
           <div className="box-image2">
-            <img src="./images/circle.png" alt="circle" id="img1" />
-            <img src="./images/box-image.png" alt="circle" id="img2" />
+            <img src="./images/circle.png" alt="circle" id="circle" />
+            <img src="./images/box-image.png" alt="circle" id="boximage" />
           </div>
         </div>
       </div>
