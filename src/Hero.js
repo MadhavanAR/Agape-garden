@@ -19,7 +19,7 @@ export default function Hero() {
         <div className="hero-text">
           <div className="star">
             <img src="./images/star.png" alt="star" />
-            <p>Welcome to Agape Garden Play School</p>
+            <p className="welcome">Welcome to Agape Garden Play School</p>
           </div>
           <p id="text1">
             Build A Foundation <br /> For A Lifetime Learning
