@@ -39,7 +39,12 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-images">
-          <img src="./images/hero.png" alt="img" />
+          <img src="./images/bg-rect1.png" alt="img" id="rect1"/>
+          <img src="./images/Image1.png" alt="kid1" id="kid1"/>
+          <img src="./images/bg-rect2.png" alt="img" id="rect2"/>
+          <img src="./images/Image2.png" alt="kid2" id="kid2"/>
+          <img src="./images/bg-rect3.png" alt="img" id="rect3"/>
+          <img src="./images/Image3.png" alt="kid3" id="kid3"/>
         </div>
       </div>
       <div className="early-education">

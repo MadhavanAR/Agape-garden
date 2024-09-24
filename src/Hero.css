@@ -68,11 +68,46 @@
     padding-left: 35%;
   }
   
-  .hero-images img {
-    width: 100%; /* Make the image responsive */
+  #rect1 {
     height: auto; /* Maintain aspect ratio */
+    transform: rotate(8deg); /* Adjust the angle as needed */
+    position: relative;
+    left: 18%;
+    bottom: 30px;
+  }
+
+  #kid1{
+    position: relative;
+    right: 105px;
+    bottom: 42px;
+  }
+
+  #rect2{
+    position: relative;
+    transform: rotate(30deg); /* Adjust the angle as needed */
+    width: 380px;
+    height: auto;
+    bottom: 72px;
+    left: 230px;
   }
   
+  #kid2{
+    position: relative;
+    right: 160px;
+    bottom: 115px;
+  }
+
+  #rect3{
+    position: relative;
+    right: 30px;
+    top: -220px;
+  }
+
+  #kid3{
+    position: relative;
+    bottom: 240px;
+    right: 290px
+  }
   .star img {
     width: 4vh;
     height: 4vh;
