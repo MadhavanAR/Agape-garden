@@ -35,3 +35,27 @@
     cursor: pointer;
   }
   
+  @media (max-width: 576px) {
+    .gallery-container {
+    width: 100%; /* Full width on small screens */
+    padding: 20px; /* Reduce padding for small screens */
+    }
+    .gallery-images {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images */
+    justify-content: center; /* Center images */
+    }
+    .column-1,
+    .column-2,
+    .column-3 {
+    width: 100%; /* Full width for each column */
+    display: flex;
+    justify-content: center; /* Center the images */
+    margin-bottom: 20px; /* Space between columns */
+    }
+    .gallery-images img {
+    width: 80%; /* Make images responsive and smaller */
+    max-width: 200px; /* Limit max width */
+    }
+    }
+    
