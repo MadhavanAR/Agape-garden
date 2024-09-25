@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import logo from "./logo.png";
 import { Link } from "react-router-dom";
+import logo from "./logo.png";
 import './Navbar.css';
 
-export default function NavBar({ onEnquireClick }) {
+export default function NavBar({ onEnquireClick, onTestimonialClick }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -26,7 +26,7 @@ export default function NavBar({ onEnquireClick }) {
           <Link to="/">Home</Link>
           <Link to="/About">About us</Link>
           <Link to="/Features">Features</Link>
-          <Link to="/Testimonial">Testimonial</Link>
+          <Link to="/Testimonial" onClick={onTestimonialClick}>Testimonial</Link>
           <Link to="/Gallery">Gallery</Link>
         </div>
         <button className="enquire-button" onClick={onEnquireClick}>
@@ -47,7 +47,7 @@ export default function NavBar({ onEnquireClick }) {
           <Link to="/" onClick={closeSidebar}>Home</Link>
           <Link to="/About" onClick={closeSidebar}>About us</Link>
           <Link to="/Features" onClick={closeSidebar}>Features</Link>
-          <Link to="/Testimonial" onClick={closeSidebar}>Testimonial</Link>
+          <Link to="/Testimonial" onClick={() => { closeSidebar(); onTestimonialClick(); }}>Testimonial</Link>
           <Link to="/Gallery" onClick={closeSidebar}>Gallery</Link>
           <button className="sidebar-enquire-button" onClick={() => { closeSidebar(); onEnquireClick(); }}>
             Enquire now

@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { forwardRef } from "react";
 import './parent-speak.css';
 const arr = [
   {
@@ -25,7 +26,7 @@ const arr = [
   },
 ];
 
-export default function ParentSpeak() {
+const ParentSpeak = forwardRef((props, ref) =>{
   const [index, setIndex] = useState(0);
 
   const handleNext = () => {
@@ -39,6 +40,7 @@ export default function ParentSpeak() {
   const { img: profile, name, review } = arr[index];
 
   return (
+    <section ref={ref}>
     <div className="parent-speak-container">
       <div className="heading">
         <img src="./images/speakstrike.png" alt="speakstrike" id="speakstrike" />
@@ -73,5 +75,7 @@ export default function ParentSpeak() {
         </button>
       </div>
     </div>
+    </section>
   );
-}
+});
+export default ParentSpeak;
