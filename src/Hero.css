@@ -67,46 +67,27 @@
     position: absolute;
     padding-left: 35%;
   }
-  
-  #rect1 {
-    height: auto; /* Maintain aspect ratio */
-    transform: rotate(8deg); /* Adjust the angle as needed */
+  #pic1 {
+    width: 310px;
+    height: 250px;
     position: relative;
-    left: 18%;
-    bottom: 30px;
-  }
-
-  #kid1{
-    position: relative;
-    right: 105px;
-    bottom: 42px;
-  }
-
-  #rect2{
-    position: relative;
-    transform: rotate(30deg); /* Adjust the angle as needed */
-    width: 380px;
-    height: auto;
-    bottom: 72px;
-    left: 230px;
+    left: 110px;
+    bottom: 170px;
   }
   
-  #kid2{
+  #pic2 {
     position: relative;
-    right: 160px;
-    bottom: 115px;
+    width: 430px;
+    height: 360px;
+    top: 60px;
+    right: 140px;
   }
-
-  #rect3{
+  #pic3 {
     position: relative;
-    right: 30px;
-    top: -220px;
-  }
-
-  #kid3{
-    position: relative;
-    bottom: 240px;
-    right: 290px
+    width: 275px;
+    height: 220px;
+    bottom: 100px;
+    right: 40px;
   }
   .star img {
     width: 4vh;
