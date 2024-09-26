@@ -96,6 +96,8 @@
   }
   .star {
     display: flex;
+    align-items: center; /* Center align vertically */
+    justify-content: flex-start;
   }
   
   .early-education {
@@ -178,3 +180,149 @@
     height: 400px;
     width: 400px;
   }
+
+  @media (max-width: 768px) { /* Tablet and smaller */
+    .hero-container {
+      flex-direction: column; /* Stack items vertically */
+      padding-top: 15vh; /* Adjust padding */
+      padding-bottom: 5vh;
+    }
+  
+    .hero-text {
+      width: 90%; /* Make text container more responsive */
+      text-align: center; /* Center align text */
+    }
+  
+    .hero-text p {
+      font-size: 5vw; /* Responsive font size */
+      margin-bottom: 5px; /* Adjust margin */
+    }
+  
+    .hero-text #text1 {
+      font-size: 8vw; /* Responsive font size */
+      margin-top: 10px;
+    }
+  
+    .hero-text h2 {
+      font-size: 8vw; /* Responsive font size */
+    }
+  
+    .hero-text h3 {
+      font-size: 4vw; /* Responsive font size */
+    }
+  
+    .text {
+       /* Stack images vertically */
+      align-items: center; /* Center align images */
+    }
+  
+    .text img {
+      width:70%; /* Responsive image size */
+      max-width: 100px; /* Maximum width for images */
+      margin: 5px 0; /* Margin between images */
+    }
+  
+    #hero-bt {
+      margin-top: 20px; /* Adjust button margin */
+      padding: 10px; /* Add padding for better tap target */
+    }
+  
+    .hero-images img {
+      width: 80%; /* Responsive image size */
+      max-width: 300px; /* Maximum width for hero images */
+      margin: 0 auto; /* Center images */
+    }
+  
+    .early-education-container {
+      flex-direction: column; /* Stack early education content */
+      align-items: center; /* Center content */
+    }
+  
+    .early-education-text {
+      text-align: center; /* Center align text */
+      font-size: 24px; /* Adjust font size */
+    }
+  
+    .blue-box, .white-box {
+      width: 90%; /* Make boxes responsive */
+      max-width: 350px; /* Maximum width */
+    }
+  
+    .white-box p, .white-box #box-text {
+      font-size: 16px; /* Adjust font size for text */
+    }
+  
+    .white-box button {
+      width: 80%; /* Make button more responsive */
+    }
+  
+    .box-image, .box-image2 {
+      flex-direction: column; /* Stack images */
+      align-items: center; /* Center align images */
+    }
+  
+    .box-image img, .box-image2 img {
+      width: 80%; /* Responsive image size */
+      max-width: 200px; /* Maximum width for box images */
+    }
+  }
+  
+  @media (max-width: 580px) { 
+    body{
+      width: 100%;
+      height: 100%;
+      margin: 20px;
+      padding: 0%;
+      overflow-x: hidden;
+    }
+    .hero-container {
+      display: flex;
+      flex-direction: column; /* Stack vertically for mobile */
+      align-items: center; /* Center align items */
+      padding: 50px; /* Adjust padding */
+    }/* Mobile phones */
+    .hero-text p {
+      font-size: 3vw; /* Further adjust for smaller screens */
+    }
+  
+    .hero-text #text1 {
+      font-size: 6vw; /* Further adjust for smaller screens */
+    }
+  
+    .hero-text h2 {
+      font-size: 10vw; /* Further adjust for smaller screens */
+    }
+  
+    .hero-text h3 {
+      font-size: 5vw; /* Further adjust for smaller screens */
+    }
+  
+    .white-box p {
+      font-size: 14px; /* Adjust font size */
+    }
+  
+    .white-box #box-text {
+      font-size: 14px; /* Adjust font size */
+    }
+    .star img{ 
+      width: 2.4vh;
+      height: 2.4vh;
+      margin: auto;
+      margin-right: -33px;
+    }
+    .star{
+      justify-content: flex-end; 
+      margin-right: 6px;
+      z-index: 3; 
+    }
+    .wel{
+      margin: 22px 60px;
+      white-space: nowrap;
+    }
+    .hero-images{
+      margin-top: 60vh;
+      width: 40%;
+      height: auto;
+    }
+  }
+  
