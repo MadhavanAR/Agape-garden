@@ -1,102 +1,162 @@
 .admission-main {
-    text-align: center;
-    height: 600px;
+  text-align: center;
+  height: 600px;
+}
+
+.admission-content {
+  width: 70%;
+  height: 60%;
+  display: flex;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.admin-heading {
+  padding-top: 45px;
+  position: relative; /* Ensure positioning context */
+}
+
+#adm-strike {
+  position: relative;
+  width: 138px; /* Keep your width */
+  height: 20px; /* Keep your height */
+  left:7%; /* Center horizontally */
+  bottom: 5%; /* Position below the heading */
+}
+
+.adm-details {
+  width: 50%;
+  height: 60%;
+  text-align: left;
+  color: #ff0099;
+  word-spacing: 2px;
+}
+
+.adm-details p {
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.adm-text img {
+  height: 40px;
+  width: 50px;
+}
+
+.adm-text {
+  align-items: center;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.adm-cred {
+  border: #f55daf solid 1px;
+  border-radius: 8px;
+  width: 50%;
+}
+
+input {
+  width: 70%;
+  height: 20px;
+  border: #f55daf solid 1px;
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+#submit {
+  border-radius: 15px;
+  width: 73%;
+  height: 30px;
+  background-color: #f55daf;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.adm-cred h4 {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 50px;
+  color: #f55daf;
+  font-weight: lighter;
+}
+@media (max-width: 768px) {
+  .admission-main {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 20px; /* Add some padding */
   }
-  
+
   .admission-content {
-    width: 70%;
-    height: 60%;
-    display: flex;
-    padding-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%; /* Increase width for smaller screens */
+    flex-direction: column; /* Stack elements vertically */
+    padding-top: 20px; /* Adjust padding */
   }
-  #strike {
-    position: relative;
-    width: 140px;
-    height: 20px;
-    left: 8%;
-    bottom: 6%;
-  }
+
   .adm-details {
-    width: 50%;
-    height: 60%;
-    text-align: left;
-    color: #ff0099;
-    word-spacing: 2px;
+    width: 100%; /* Full width for smaller screens */
+    margin-left: 0; /* Reset margin */
+    margin-right: 0; /* Reset margin */
   }
-  
+
   .adm-details p {
-    margin-left: 40px;
-    margin-right: 20px;
+    margin-left: 20px; /* Adjust margins */
+    margin-right: 20px; /* Adjust margins */
   }
-  
-  .adm-text img {
-    height: 40px;
-    width: 50px;
-  }
-  .adm-text {
-    align-items: center;
-    display: flex;
-    padding-bottom: 20px;
-  }
-  
+
   .adm-cred {
-    border: #f55daf solid 1px;
-    border-radius: 8px;
-    width: 50%;
+    width: 100%; /* Full width for smaller screens */
+    padding-bottom: 3%;
   }
-  
-  #name {
-    width: 70%;
-    height: 20px;
-    border: #f55daf solid 1px;
-    border-radius: 4px;
-    padding: 4px;
-    margin-bottom: 20px;
-  }
-  
-  #email {
-    width: 70%;
-    height: 20px;
-    border: #f55daf solid 1px;
-    border-radius: 4px;
-    padding: 4px;
-    margin-bottom: 20px;
-  }
-  
-  #phone {
-    width: 70%;
-    height: 20px;
-    border: #f55daf solid 1px;
-    border-radius: 4px;
-    padding: 4px;
-    margin-bottom: 20px;
-  }
-  
-  #pin {
-    width: 70%;
-    height: 20px;
-    border: #f55daf solid 1px;
-    border-radius: 4px;
-    padding: 4px;
-    margin-bottom: 20px;
-  }
-  
-  #submit {
+
+  input {
+    width: 50%; /* Increase input width */
     border-radius: 15px;
-    width: 73%;
-    height: 30px;
-    background-color: #f55daf;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
   }
-  
+
+  #submit {
+    width: 20%; /* Increase button width */
+  }
+
+  .admin-heading {
+    padding-top: 20px; /* Adjust heading padding */
+  }
+}
+
+@media (max-width: 540px) {
+  .admission-main {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .admission-content {
+    width: 95%; /* Increase width for smallest screens */
+  }
+
+  .adm-details {
+    width: 100%; /* Keep full width */
+  }
+
+  .adm-text img {
+    height: 30px; /* Smaller image size */
+    width: 40px; /* Smaller image size */
+  }
+
+  .adm-cred {
+    width: 100%; /* Full width */
+  }
+
+  input {
+    height: 30px; /* Increase input height for better touch target */
+    border-radius: 15px;
+  }
+
+  #submit {
+    height: 40px; /* Increase button height */
+    font-size: 16px; /* Larger text for better readability */
+  }
+
   .adm-cred h4 {
-    text-align: left;
-    font-size: 20px;
-    margin-left: 50px;
-    color: #f55daf;
-    font-weight: lighter;
-  }  
+    font-size: 18px; /* Smaller heading size */
+    margin-left: 20px; /* Adjust margin */
+  }
+}
