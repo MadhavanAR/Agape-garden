@@ -30,7 +30,7 @@
   .hero-text h3 {
     font-size: 1.8vw;
   }
-  .text {
+  .img3 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -290,11 +290,19 @@
     }
   
     .hero-text h2 {
-      font-size: 10vw; /* Further adjust for smaller screens */
+      font-size: 8vw;
+      
     }
   
     .hero-text h3 {
-      font-size: 5vw; /* Further adjust for smaller screens */
+      font-size: 4vw;
+      text-align: start;
+      margin-left: 20px;
+    }
+    .img3{
+      display: flex;
+      
+      margin-left:20px ;
     }
   
     .white-box p {
@@ -321,8 +329,11 @@
     }
     .hero-images{
       margin-top: 60vh;
-      width: 40%;
+      width: 30%;
       height: auto;
+    }
+    #rect2{
+      width: 30%;
     }
   }
   
