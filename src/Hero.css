@@ -86,7 +86,7 @@
 #pic2 {
   width: 69%;
   height: 59vh; 
-  margin-left: 45%;
+  margin-left: 60%;
   margin-top: -10%; 
 }
 
@@ -95,7 +95,8 @@
   height: 44vh; 
   margin: 0 10px;
   position: absolute; 
-  top: 40%; 
+  top: 40%;
+  margin-right: 40%; 
 }
 
 .star img {
@@ -206,17 +207,18 @@
   }
 
   .hero-text {
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
 
   .hero-text p {
-    font-size: 5vw;
+    font-size: 3.5vw;
     margin-bottom: 5px;
+    margin-left: 6%;
   }
 
   .hero-text #text1 {
-    font-size: 8vw;
+    font-size: 6vw;
     margin-top: 10px;
   }
 
@@ -232,12 +234,20 @@
     align-items: center;
   }
 
-  .text img {
-    width: 70%;
-    max-width: 100px;
-    margin: 5px 0;
+  #pic3{
+    width: 54%;
+    height:24vh ;
+    margin-left: -33%;
+    margin-top: -3%;
   }
-
+  #pic1,#pic2{
+    width: 100%;
+    height: auto;
+  }
+  #pic2{
+    margin-right: -20%;
+    margin-top: -5%;
+  }
   #hero-bt {
     margin-top: 20px;
     padding: 10px;
