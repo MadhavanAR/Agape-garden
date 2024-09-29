@@ -119,3 +119,59 @@
     height: 44px; /* Keep buttons a bit larger for touch */
   }
 }
+@media (max-width: 580px) {
+  .parent-speak-container {
+    padding-top: 20px; /* Adjust padding for mobile */
+    padding-bottom: 50px; 
+    margin-left: -20px;/* Adjust padding for mobile */
+  }
+
+  .pscard-container {
+    flex-direction: row; /* Keep buttons on the sides */
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Space between buttons and pscard */
+    
+  }
+
+  .review-box {
+    width: 10%;
+    height: 40%;
+    margin-left: -20%;
+    margin-bottom: 20px; /* Space between review box and buttons */
+  }
+
+  .review-box #profile {
+    height: 45%; /* Smaller profile image */
+    width: 40%; /* Maintain aspect ratio */
+  }
+
+  .pscard {
+    margin-left: -140%;
+    width: 39vb; /* Set fixed width */
+    height: 10%; /* Set fixed height */
+    padding: 0px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in total size */
+  }
+  .heading p{
+    margin-left: -7%;
+    
+    font-size: 1rem;
+  }
+  .pscard h1 {
+    font-size: 1rem; /* Adjust heading size */
+  }
+
+  .review {
+    width: auto; /* Allow the review to adjust */
+  }
+
+  .review p {
+    font-size: 0.9rem; /* Adjust text size for better readability */
+  }
+
+  .pscard-container button {
+    margin-left: -6%;
+    width: 8%; /* Keep buttons a bit larger for touch */
+    height: 8%; /* Keep buttons a bit larger for touch */
+  }
+}
