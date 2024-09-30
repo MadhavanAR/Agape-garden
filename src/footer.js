@@ -1,7 +1,7 @@
 import './footer.css';
 export default function Footer() {
   return (
-    <div>
+    <div className='foot'>
       <img src="./images/footer.png" alt="img" id="footer"></img>
       <div className="footer">
         <div className="footer-container">

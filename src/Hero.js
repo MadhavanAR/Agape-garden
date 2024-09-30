@@ -19,7 +19,7 @@ export default function Hero() {
         <div className="hero-text">
           <div className="star">
             <img src="./images/star.png" alt="star" />
-            <p className="wel">Welcome to Agape Garden Play School</p>
+            <p>Welcome to Agape Garden Play School</p>
           </div>
           <p id="text1">
             Build A Foundation <br /> For A Lifetime Learning
@@ -28,7 +28,7 @@ export default function Hero() {
             <img src="./images/button.png" alt="button"/>
           </button>
 
-          <div className="text">
+          <div className="img3">
             <img src="./images/image-three.png" alt="s1" id="img1"/>
             <img src="./images/image-two.png" alt="s2" id="img2" />
             <img src="./images/image-one.png" alt="s3" id="img3"/>

@@ -1,8 +1,9 @@
-/* Footer */
+
+/*footer*/
 .footer {
   background-color: #f55daf;
   height: 400px;
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 #footer {
@@ -13,6 +14,7 @@
 
 .footer-container {
   letter-spacing: 1px;
+
   font-size: 16px;
   color: #decdff;
   width: 85%;
@@ -20,134 +22,130 @@
   margin-right: auto;
   padding-top: 50px;
 }
-
 .top {
   display: flex;
 }
-
 .logo img {
   padding-bottom: 30px;
-  transition: width 0.3s ease; /* Smooth transition for logo resizing */
 }
-
 .social-media {
   padding-left: 30px;
 }
-
 .social-media img {
   height: 30px;
   width: 30px;
   padding: 10px;
-  transition: transform 0.3s ease; /* Smooth transition for icon resizing */
 }
-
 .quick-links {
   width: 200px;
   letter-spacing: 1px;
+
   padding-left: 10%;
   color: #decdff;
 }
-
 .quick-links p {
   letter-spacing: 2px;
+
   font-weight: bold;
 }
-
 .quick-links a {
   font-weight: normal;
   padding-bottom: 10px;
+
   color: #decdff;
   display: block;
   text-decoration: none;
 }
-
 .address {
   width: 250px;
   line-height: 22px;
 }
-
 .address p {
   font-weight: normal;
 }
-
 .address h5 {
   margin-top: 16px;
   margin-bottom: 16px;
   font-size: 16px;
   font-weight: bold;
 }
-
 .footer-line {
   width: 100%;
   height: 1px; /* Adjust the height to make the line thicker or thinner */
   background-color: hsl(0, 24%, 93%); /* Adjust color to match your design */
   margin-top: 10px; /* Adjust spacing between navbar and line */
 }
-
 .bottom {
   text-align: center;
   font-weight: lighter;
   font-size: 20px;
 }
-
 /* Media Queries for Mobile Views */
 @media (max-width: 768px) {
-  .footer-container {
-      width: 100%;
-      padding-top: 20px; /* Adjust padding for mobile view */
-  }
-
-  .logo img {
-      width: 80%; /* Shrink logo to 80% of its original size */
-      max-width: 150px; /* Optional: Set a max width */
-  }
-
-  .social-media img {
-      height: 24px; /* Shrink icon size */
-      width: 24px; /* Shrink icon size */
-      padding: 8px; /* Adjust padding */
-  }
-
-  .quick-links {
-      padding-left: 5%; /* Less padding for mobile */
-      width: auto; /* Adjust width */
-      padding-right: 5%;
-  }
-
-  .address {
-      width: auto; /* Adjust width */
-  }
+.footer-container {
+    width: 100%;
+    padding-top: 20px; /* Adjust padding for mobile view */
 }
 
-@media (max-width: 540px) {
-  .footer-container {
-      font-size: 14px; /* Slightly smaller font size */
-      padding-top: 15px; /* Less padding for smaller screens */
-  }
+.logo img {
+    width: 80%; /* Shrink logo to 80% of its original size */
+    max-width: 150px; /* Optional: Set a max width */
+}
 
-  .logo img {
-      width: 70%; /* Shrink logo to 70% of its original size */
-      max-width: 120px; /* Optional: Set a max width for smaller screens */
-      margin-left: 5px;
-  }
+.social-media img {
+    height: 24px; /* Shrink icon size */
+    width: 24px; /* Shrink icon size */
+    padding: 8px; /* Adjust padding */
+}
 
-  .social-media img {
-      height: 20px; /* Further shrink icon size */
-      width: 20px; /* Further shrink icon size */
-      padding: 6px; /* Adjust padding */
-  }
+.quick-links {
+    padding-left: 5%; /* Less padding for mobile */
+    width: auto; /* Adjust width */
+    padding-right: 5%;
+}
 
-  .quick-links {
-      padding-left: 2%; /* Less padding */
-      padding-right: 5%;
+.address {
+    width: auto; /* Adjust width */
+}
+}
 
-  }
+@media (max-width: 580px) {
+.foot{
+  margin-bottom: -10%;
+  margin-left: -3.1%;
+  width: 100%;
+  height: auto;
+}
 
-  .address {
-      width: auto; /* Adjust width */
-  }
+.footer-container {
+    font-size: 14px; /* Slightly smaller font size */
+    padding-top: 2px;
+     /* Less padding for smaller screens */
+}
 
-  .bottom {
-      font-size: 18px; /* Slightly smaller text for bottom */
-  }
+.logo img {
+    width: 70%; /* Shrink logo to 70% of its original size */
+    max-width: 120px; /* Optional: Set a max width for smaller screens */
+    margin-left: 5px;
+}
+
+.social-media img {
+    height: 20px; /* Further shrink icon size */
+    width: 20px; /* Further shrink icon size */
+    padding: 6px; /* Adjust padding */
+}
+
+.quick-links {
+    padding-left: 2%; /* Less padding */
+    padding-right: 5%;
+
+}
+
+.address {
+    width: auto; /* Adjust width */
+}
+
+.bottom {
+    font-size: 18px; /* Slightly smaller text for bottom */
+}
 }
