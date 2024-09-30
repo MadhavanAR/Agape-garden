@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import './Hero.css';
+import "./Hero.css";
 
 export default function Hero() {
   const navigate = useNavigate();
@@ -25,13 +25,13 @@ export default function Hero() {
             Build A Foundation <br /> For A Lifetime Learning
           </p>
           <button id="hero-bt" onClick={handleKnowMoreClick}>
-            <img src="./images/button.png" alt="button"/>
+            <img src="./images/button.png" alt="button" />
           </button>
 
-          <div className="text">
-            <img src="./images/image-three.png" alt="s1" id="img1"/>
+          <div className="img3">
+            <img src="./images/image-three.png" alt="s1" id="img1" />
             <img src="./images/image-two.png" alt="s2" id="img2" />
-            <img src="./images/image-one.png" alt="s3" id="img3"/>
+            <img src="./images/image-one.png" alt="s3" id="img3" />
             <h2>350+</h2>
             <h3>
               Happy and <br /> Engaged kids
@@ -39,10 +39,10 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-images">
-          <img src="./images/Picture1.png" alt="img" id="pic1"/>
-          <img src="./images/Picture2.png" alt="kid1" id="pic2"/>
-          <img src="./images/Picture3.png" alt="img" id="pic3"/>
-         </div>
+          <img src="./images/Picture1.png" alt="img" id="pic1" />
+          <img src="./images/Picture2.png" alt="kid1" id="pic2" />
+          <img src="./images/Picture3.png" alt="img" id="pic3" />
+        </div>
       </div>
       <div className="early-education">
         <div className="early-education-container">

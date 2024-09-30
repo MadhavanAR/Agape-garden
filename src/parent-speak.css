@@ -15,6 +15,30 @@
   align-items: center;
 }
 
+#checkout {
+  position: relative;
+  bottom: 5px;
+  background-color: #ff69b4; /* Hot pink background */
+  border: none; /* No border */
+  color: white; /* White text */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* No underline */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 20px; /* Remove rounded corners for a rectangular button */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effect */
+  width: 20%; /* Take full width of the parent */
+}
+
+#checkout:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+#checkout:focus {
+  outline: none; /* Remove outline when focused */
+}
+
 #speakstrike {
   position: relative;
   top: 94px;
