@@ -133,8 +133,14 @@
         flex-direction: column; 
         align-items: center; 
     }
+    .black-text,.pink-text{
+      font-size: 1.3rem;
+    }
 
     #curvyline {
-        width: 120px; 
+        width: 70px;
+        height: auto;
+        margin-top: 15%;
+        margin-right: -10%; 
     }
 }

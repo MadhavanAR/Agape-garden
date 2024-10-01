@@ -121,57 +121,119 @@
 }
 @media (max-width: 580px) {
   .parent-speak-container {
-    padding-top: 20px; /* Adjust padding for mobile */
+    padding-top: 20px; 
     padding-bottom: 50px; 
-    margin-left: -20px;/* Adjust padding for mobile */
+    margin-left: -20%;
   }
 
   .pscard-container {
-    flex-direction: row; /* Keep buttons on the sides */
-    align-items: center; /* Center align items vertically */
-    justify-content: space-between; /* Space between buttons and pscard */
-    
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
   }
 
   .review-box {
-    width: 10%;
-    height: 40%;
-    margin-left: -20%;
-    margin-bottom: 20px; /* Space between review box and buttons */
+    width: 100%; 
+    height: auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 20px; 
   }
 
   .review-box #profile {
-    height:85%; /* Smaller profile image */
-    width: 80%; /* Maintain aspect ratio */
+    height: 25%; 
+    width: 10%;
+    margin-top: -10%; 
   }
 
   .pscard {
-    margin-left: -140%;
-    width: 39vb; /* Set fixed width */
-    height: 10%; /* Set fixed height */
-    padding: 0px; /* Add some padding */
-    box-sizing: border-box; /* Include padding in total size */
+    margin-left: 20%;
+    width: 80%; 
+    height: auto; 
+    padding: 0px; 
+    box-sizing: border-box; 
   }
-  .heading p{
+
+  .heading p {
     margin-left: -7%;
-    
     font-size: 1rem;
   }
+
   .pscard h1 {
-    font-size: 1rem; /* Adjust heading size */
+    font-size: 1rem; 
   }
 
   .review {
-    width: auto; /* Allow the review to adjust */
+    width: auto; 
   }
 
   .review p {
-    font-size: 0.9rem; /* Adjust text size for better readability */
+    font-size: 0.9rem; 
   }
 
   .pscard-container button {
     margin-left: -6%;
-    width: 8%; /* Keep buttons a bit larger for touch */
-    height: 8%; /* Keep buttons a bit larger for touch */
+    width: 8%; 
+    height: 8%; 
+  }
+}
+@media (max-width: 580px) {
+  .parent-speak-container {
+    padding-top: 20px; 
+    padding-bottom: 50px; 
+    margin-left: -20%;
+  }
+
+  .pscard-container {
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
+  }
+
+  .review-box {
+    width: 100%; 
+    height: auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 20px; 
+  }
+
+  .review-box #profile {
+    height: 60px;  /* Adjust height for better visibility */
+    width: 60px;   /* Adjust width to maintain aspect ratio */
+    margin-top: 0; /* Remove negative margin for centering */
+  }
+
+  .pscard {
+    margin-left: 0; /* Reset margin for better alignment */
+    width: 90%; /* Use a percentage for responsiveness */
+    height: auto; 
+    padding: 0px; 
+    box-sizing: border-box; 
+  }
+
+  .heading p {
+    margin-left: -7%;
+    font-size: 1rem;
+  }
+
+  .pscard h1 {
+    font-size: 1rem; 
+  }
+
+  .review {
+    width: auto; 
+  }
+
+  .review p {
+    font-size: 0.9rem; 
+  }
+
+  .pscard-container button {
+    margin-left: -6%;
+    width: 8%; 
+    height: 8%; 
   }
 }

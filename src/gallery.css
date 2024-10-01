@@ -63,10 +63,15 @@
       justify-content: center;
       margin-bottom: 20px;
   }
-
+  #gal-line{
+    width: 30%;
+    height:20%;
+    margin-left: -14%;
+    margin-top: 3%;
+  }
   .gallery-images img {
       width: 30%;
-      max-width: 200px;
+      max-width: 170px;
   }
 
   .gallery-container button {

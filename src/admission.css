@@ -159,4 +159,14 @@ input {
     font-size: 18px; /* Smaller heading size */
     margin-left: 20px; /* Adjust margin */
   }
+  .admission-main h1{
+    font-size: 1.3rem;
+  }
+  #strike{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    margin-top: -6%;
+    margin-left: 2%;
+  }
 }
