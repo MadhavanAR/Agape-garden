@@ -12,7 +12,7 @@
       <section ref={ref} id="gallery">
         <div className="gallery-section">
           <div className="gallery-container">
-            <div className="heading">
+            <div className="gal-heading">
               <h1>
                 <span style={{ color: "black" }}>Our </span>
                 <span style={{ color: "#F55DAF" }}>Gallery</span>

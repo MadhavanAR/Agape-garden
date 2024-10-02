@@ -1,3 +1,4 @@
+
 .admission-main {
   text-align: center;
   height: 600px;
@@ -22,7 +23,7 @@
   width: 138px; /* Keep your width */
   height: 20px; /* Keep your height */
   left:7%; /* Center horizontally */
-  bottom: 5%; /* Position below the heading */
+  bottom: 20px; /* Position below the heading */
 }
 
 .adm-details {
@@ -158,5 +159,12 @@ input {
   .adm-cred h4 {
     font-size: 18px; /* Smaller heading size */
     margin-left: 20px; /* Adjust margin */
+  }
+  .admission-main h1{
+    font-size: 1.3rem;
+  }
+  .adm-strike{
+    position: relative;
+    bottom: 15px;
   }
 }

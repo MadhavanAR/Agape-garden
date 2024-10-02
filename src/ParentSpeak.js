@@ -145,15 +145,17 @@ const ParentSpeak = forwardRef((props, ref) => {
                   <FontAwesomeIcon icon={faQuoteLeft} /> {review}{" "}
                   <FontAwesomeIcon icon={faQuoteRight} />
                 </p>
-                <a
+                
+              </div>
+              
+            </div>
+            <a
                   href="https://www.google.com/maps/place/Agape+Garden+Play+School+%26+Day+Care+Centre/@12.9472833,80.1969516,17z/data=!4m8!3m7!1s0x3a525dcdf26b952d:0x126e2ec396280c4b!8m2!3d12.9472781!4d80.1995265!9m1!1b1!16s%2Fg%2F11c1mw2m_8?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <button id="checkout">Checkout</button>
                 </a>
-              </div>
-            </div>
           </div>
           <button
             id="right-button"

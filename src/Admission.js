@@ -9,7 +9,9 @@ const Admission = forwardRef((props, ref) => {
           <span style={{ color: "#F55DAF" }}>Enquiry</span>
         </h1>
       </div>
+      <div className="adm-strike">
       <img src="./images/strike.png" alt="strike" id="adm-strike" />
+      </div>
       <div className="admission-content">
         <div className="adm-details">
           <div className="adm-text">
