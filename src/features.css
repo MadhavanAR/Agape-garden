@@ -15,18 +15,18 @@
   width: 170px;
 }
 
-.heading {
+.feature-heading {
   text-align: center;
   width: 550px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.heading h1 {
+.feature-heading h1 {
   font-size: 40px;
 }
 
-.heading p {
+.feature-heading p {
   font-size: 22px;
   font-weight: lighter;
 }
@@ -65,28 +65,46 @@
   padding-top: 15%;
 }
 
-/* Media Query for Desktop View */
-@media (min-width: 769px) {
-  .feature-cards {
-      display: block; /* Default behavior for larger screens */
-  }
-
-  .row {
-      justify-content: space-between; /* Maintain spacing between cards */
-  }
-
-  .card {
-      width: 23%; /* Adjust card width to fit 4 columns */
-      margin-bottom: 20px; /* Add spacing below each card */
-  }
-}
 
 /* Media Query for Mobile View */
 @media (max-width: 768px) {
-  .heading {
+  .feature-heading {
       width: 90%; /* Adjust width for smaller screens */
       margin-left: auto;
       margin-right: auto;
+  }
+
+  .feature-cards {
+      overflow-x: auto; /* Enable horizontal scrolling for cards */
+      display: flex; /* Set to flex for horizontal layout */
+      flex-wrap: nowrap; /* Prevent wrapping */
+  }
+
+  .row {
+      flex: 0 0 auto; /* Prevent the row from shrinking */
+      margin-bottom: 20px; /* Add spacing between rows */
+  }
+
+  .card {
+      width: 45%; /* Adjust width for 2 columns */
+      margin-right: 10px; /* Space between cards */
+  }
+
+  /* Show only 2 rows initially */
+  .feature-cards .row:nth-child(n+3) {
+      display: none; /* Hide rows beyond the second */
+  }
+}
+@media (max-width: 580px) {
+  .feature-heading h1{
+      font-size: 30px;
+  }
+  #strikeline {
+    position: relative;
+    left: 12%;
+    top: 75px;
+    height: 15px;
+    width: 150px;
   }
 
   .feature-cards {

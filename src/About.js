@@ -5,8 +5,11 @@ export default function About() {
       <div className="About">
         <div className="about-container">
           <div className="about-text">
+             <div className="about-image">
+            <img src="./images/poly1.png" alt="img"></img>
+          </div>
             <h1>About Us</h1>
-            <p>
+            <p className='about-text1'>
               Discover Agape Garden, where we celebrate eight years of nurturing
               young minds through God's grace. Our preschool program is
               meticulously crafted with a deep understanding of the
@@ -28,9 +31,6 @@ export default function About() {
               comfortable atmosphere where children thrive in various activity
               zones, promoting holistic growth and exploration.
             </p>
-          </div>
-          <div className="about-image">
-            <img src="./images/poly1.png" alt="img"></img>
           </div>
         </div>
       </div>

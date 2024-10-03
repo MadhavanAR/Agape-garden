@@ -16,6 +16,22 @@
   flex-wrap: wrap; /* Allow items to wrap */
 }
 
+.parent-heading {
+  text-align: center;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parent-heading h1 {
+  font-size: 40px;
+}
+
+.parent-heading p {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
 #checkout {
   position: relative;
   top: 5px;
@@ -48,7 +64,7 @@
   position: relative;
   top: 94px;
   width: 130px;
-  left: 6%;
+  left: 80px;
 }
 
 .review-box {
@@ -184,6 +200,16 @@
 
 /* Additional styles for screens 580px or smaller */
 @media (max-width: 580px) {
+  .parent-heading h1{
+    font-size: 30px;
+  }
+  #speakstrike {
+    position: relative;
+    top: 74px;
+    width: 100px;
+    left: 70px;
+  }
+  
   .parent-speak-container {
     padding-top: 20px; /* Adjust padding for mobile */
     padding-bottom: 50px; /* Adjust padding for mobile */

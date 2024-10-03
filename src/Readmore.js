@@ -7,10 +7,10 @@ const Readmore = () => {
         <h3> The Importance of Early Childhood Education </h3>
       </div>
       <div className="background">
+      <div className="title-text1">
       <div className="title-image">
         <img src="./images/title.png" alt="title" id="title"></img>
       </div>
-      <div className="title-text1">
         <p>
           Early childhood education is an important part of all children’s
           lives, and is essential to the development of successful,
@@ -26,9 +26,7 @@ const Readmore = () => {
           period is on providing a nurturing and responsive environment. It is
           important that children in early childhood education experience
           positive interactions with others, and receive the needed support and
-          guidance that will enable them to build trust and confidence. </p> </div></div>
-
-          <div className="title-text2"> <p> Early
+          guidance that will enable them to build trust and confidence.  Early
           education provides children with the opportunity to learn and practice
           the foundational concepts needed to succeed in school and beyond.
           These skills include basic literacy and math skills, as well as
@@ -63,7 +61,7 @@ const Readmore = () => {
           their journey, not simply because it’s the right thing to do, but
           because it’s the essential path towards a brighter, more prosperous
           future for all. Remember, the greatest minds of tomorrow are shaped in
-          the classrooms and playgrounds of today.</p> </div>
+          the classrooms and playgrounds of today.</p> </div></div>
           </div>
   );
 };

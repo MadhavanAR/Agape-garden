@@ -22,13 +22,13 @@ const Faq = forwardRef((props, ref) => {
         <img src='./images/tower-icon.png' alt='tower' id='tower' />
         <img src='./images/puzzle-icon.png' alt='puzzle' id='puzzle' />
         <img src='./images/curvyline.png' alt='curvyline' id='curvyline' />
-        <div ref={ref} className="faq-container">
-          <div className="heading">
+          <div className="faq-heading">
             <h1 style={{paddingBottom:"50px"}}>
               <span className="black-text">Frequently Asked </span>
               <span className="pink-text" style={{color:"#F55DAF"}}>Questions</span>
             </h1>
           </div>
+          <div ref={ref} className="faq-container">
           <div className="faq-content">
             {sentences.map(({ id, q, paragraph }) => (
               <div key={id} className="faq-item">

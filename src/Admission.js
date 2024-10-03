@@ -3,7 +3,7 @@ import './admission.css'
 const Admission = forwardRef((props, ref) => {
   return (
     <div className="admission-main" ref={ref}>
-      <div className="admin-heading">
+      <div className="admin-heading" id="admin-heading">
         <h1>
           <span style={{ color: "black" }}>Admission </span>
           <span style={{ color: "#F55DAF" }}>Enquiry</span>

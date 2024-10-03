@@ -1,47 +1,51 @@
 .hero-container {
-  height: fit-content;
+  height: 700px;
   display: flex;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20vh;
-  padding-bottom: 10vh;
 }
 
 .hero-text {
   padding-top: 5vh;
   width: 700px;
 }
+
 .hero-text p {
   font-size: 1.45vw;
   margin-bottom: 10px;
 }
+
 .hero-text #text1 {
   font-size: 3.5vw;
   margin-top: 10px;
   font-weight: 600;
 }
+
 .hero-text h2 {
   font-size: 4.9vw;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
   padding: 10px;
 }
+
 .hero-text h3 {
   font-size: 1.8vw;
 }
-.text {
+
+.img3 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.text h2 {
+.img3 h2 {
   position: relative;
   right: 32px;
 }
 
-.text h3 {
+.img3 h3 {
   position: relative;
   right: 32px;
 }
@@ -55,46 +59,44 @@
   position: relative;
   right: 38px;
 }
+
 #hero-bt {
   margin-top: 40px;
   margin-bottom: 30px;
   cursor: pointer;
   border: none;
+  background-color: transparent;
   padding: 0;
 }
 
 .hero-images {
-  position: absolute;
-  padding-left: 35%;
+  width: 50%;
 }
-
 #pic1 {
-  width: 310px;
-  height: 250px;
+  width: 60%;
+  height: auto;
   position: relative;
-  left: 110px;
-  bottom: 170px;
+  bottom: 6%;
 }
-
 #pic2 {
+  width: 80%;
+  height: auto;
   position: relative;
-  width: 430px;
-  height: 370px;
-  top: 60px;
-  right: 140px;
+  bottom: 22%;
+  left: 10%;
 }
 #pic3 {
   position: relative;
-  width: 275px;
-  height: 220px;
-  bottom: 120px;
-  right: 40px;
+  width: 60%;
+  bottom: 50%;
+  right: 38%;
 }
 .star img {
   width: 4vh;
   height: 4vh;
   padding-top: 20px;
 }
+
 .star {
   display: flex;
 }
@@ -106,6 +108,7 @@
   display: flex;
   width: 100%;
 }
+
 .early-education-container {
   display: flex;
   width: 85%;
@@ -115,6 +118,7 @@
   padding-top: 50px;
   padding-bottom: 100px;
 }
+
 .early-education-text {
   color: aliceblue;
   font-size: 48px;
@@ -136,12 +140,14 @@
   border-radius: 35px;
   border: #0c0c0c solid 2px;
 }
+
 .white-box p {
   color: #0c0c0c;
   font-size: 28px;
   text-align: center;
   font-weight: 600;
 }
+
 .white-box #box-text {
   padding-left: 40px;
   padding-right: 40px;
@@ -149,6 +155,7 @@
   font-weight: 200;
   text-align: justify;
 }
+
 .white-box button {
   font-size: 18px;
   font-weight: 600;
@@ -161,21 +168,324 @@
   background: #89e3ff;
   cursor: pointer;
 }
+
 .box-image {
   display: flex;
 }
+
 .box-image img {
   margin-left: 50px;
 }
+
 .box-image2 #circle {
   padding-left: 60%;
   padding-top: 40px;
   height: 114px;
   width: 114px;
 }
+
 .box-image2 #boximage {
   padding-top: 30px;
   padding-left: 8%;
   height: 400px;
   width: 400px;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    padding-top: 15vh;
+    height: 800px;
+  }
+
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+  .star img {
+    position: relative;
+    left: 13%;
+  }
+
+  .hero-text p {
+    font-size: 3vw;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-text #text1 {
+    font-size: 6vw;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+  .img3 h3 {
+    padding-top: 0;
+    font-size: 5vh;
+  }
+  .img3 h2 {
+    font-size: 3rem;
+    padding-top: 0;
+  }
+  .text {
+    align-items: center;
+  }
+
+  .hero-images {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #pic1 {
+    position: relative;
+    top: 90px;
+    right: 10px;
+  }
+  #pic2 {
+    position: relative;
+    left: 190px;
+    bottom: 320px;
+    max-width: 60%;
+  }
+  #pic3 {
+    position: relative;
+    bottom: 300px;
+    left: 5%;
+    max-width: 40%;
+  }
+
+  #hero-bt {
+    margin-top: 20px;
+    height: 20px;
+  }
+
+  .hero-images img {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .early-education-container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+    height: 920px;
+  }
+
+  .early-education-text {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .white-box {
+    width: 100%;
+    height: auto;
+    margin-left: -6%;
+  }
+
+  .blue-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    height: auto;
+  }
+
+  .white-box p,
+  .white-box #box-text {
+    font-size: 1.2rem;
+  }
+
+  .white-box button {
+    width: 30%;
+    height: auto;
+    padding: 2%;
+    margin-right: 50%;
+    margin-top: -8%;
+    margin-bottom: 10px;
+  }
+
+  .box-image,
+  .box-image2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-image img {
+    margin-left: -60%;
+  }
+
+  .box-image2 #boximage {
+    margin-left: 20%;
+    width: 50%;
+    height: auto;
+  }
+
+  .box-image2 #circle {
+    margin-left: 20%;
+    width: 17%;
+    height: 20%;
+  }
+
+  .box-image img,
+  .box-image2 img {
+    width: 10%;
+    height: 10%;
+  }
+}
+@media (max-width: 580px) {
+  .hero-container {
+    flex-direction: column;
+    padding-top: 15vh;
+    height: 800px; /* Adjust height if necessary */
+    position: relative;
+  }
+
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .star img {
+    position: relative;
+    left: 4%; /* Adjusted for smaller screen */
+  }
+
+  .hero-text p {
+    font-size: 4vw; /* Slightly larger for readability */
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-text #text1 {
+    font-size: 5vw; /* Adjusted size */
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  .img3 h3 {
+    font-size: 4vh; /* Adjusted size */
+  }
+
+  .img3 h2 {
+    font-size: 2.5rem; /* Adjusted size */
+  }
+
+  .text {
+    align-items: center;
+  }
+
+  .hero-images {
+    width: 100%;
+  }
+
+  #pic1 {
+    position: relative;
+    top: 70px; /* Adjusted position */
+    right: 5px; /* Adjusted position */
+  }
+
+  #pic2 {
+    position: relative;
+    left: 120px; /* Adjusted position */
+    bottom: 280px; /* Adjusted position */
+    max-width: 70%; /* Adjusted size */
+  }
+
+  #pic3 {
+    position: absolute;
+    bottom: 170px; /* Adjusted position */
+    left: 310px;
+    max-width: 50%; /* Adjusted size */
+  }
+
+  #hero-bt {
+    margin-top: 15px; /* Adjusted margin */
+    height: 20px;
+  }
+
+  .hero-images img {
+    width: 90%; /* Increased size */
+    max-width: 250px; /* Adjusted size */
+    margin: 0 auto;
+  }
+
+  .early-education-container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+    height: 950px; /* Adjusted height */
+  }
+
+  .early-education-text {
+    text-align: center;
+    font-size: 20px; /* Adjusted size */
+  }
+  .white-box {
+    width: 100%;
+    height: auto;
+    margin-left: -6%;
+  }
+
+  .blue-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    height: auto;
+  }
+
+  .white-box p,
+  .white-box #box-text {
+    font-size: 1.1rem; /* Adjusted size */
+  }
+
+  .white-box button {
+    width: 40%; /* Adjusted size */
+    height: auto;
+    padding: 3%; /* Adjusted padding */
+    margin-right: 50%; /* Adjusted margin */
+    margin-top: -5%; /* Adjusted margin */
+    margin-bottom: 10px;
+  }
+
+  .box-image,
+  .box-image2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .box-image2 #boximage {
+    margin-left: 10%; /* Adjusted margin */
+    width: 60%; /* Adjusted size */
+    height: auto;
+  }
+
+  .box-image2 #circle {
+    margin-left: 15%; /* Adjusted margin */
+    width: 20%; /* Adjusted size */
+    height: auto;
+  }
+
+  .box-image img,
+  .box-image2 img {
+    width: 12%; /* Adjusted size */
+    height: 12%; /* Adjusted size */
+  }
 }

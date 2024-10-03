@@ -112,7 +112,7 @@ const ParentSpeak = forwardRef((props, ref) => {
   return (
     <section ref={ref}>
       <div className="parent-speak-container">
-        <div className="heading">
+        <div className="parent-heading">
           <img
             src="./images/speakstrike.png"
             alt="speakstrike"

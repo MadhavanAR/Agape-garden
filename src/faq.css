@@ -1,33 +1,44 @@
-
 .bg-faq {
   width: 100%;
-  height: 550px;
-  background-color: #FFD2EA;
+  height: auto;
+  background-color: #ffd2ea;
   padding-top: 70px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .faq-container {
   transition: height 0.3s ease;
-  width: 870px;
-  height: 550px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  max-width: 870px;
+  height: auto;
+  margin: 0 auto;
   position: relative;
-  right:160px;
+  left: 6%;
+}
 
+.faq-heading h1 {
+  text-align: center;
+}
+
+#curvyline {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  margin-top: 4%;
+  margin-left: 22%;
 }
 
 .faq-content {
   text-align: justify;
-  margin-left: 110px;
-  transition: height 0.3s ease;
+  margin: 20px 0;
 }
 
 .faq-content p {
   color: black;
   padding-top: 2px;
-  width: 90%;
+  width: 80%;
   padding-bottom: 8px;
   overflow: hidden;
   transition: height 0.3s ease, padding 0.3s ease;
@@ -35,57 +46,171 @@
 }
 
 .faq-line {
-  width: 90%;
-  height: 2px; /* Adjust the height to make the line thicker or thinner */
+  width: 80%;
+  height: 2px;
   background-color: #e490b7;
-  margin-top:10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-#curvyline {
-  position: relative;
-  top: 65px;
-  left: 46%;
-  width: 200px;
-  height: 22px;
-}
-
-/* Add these styles */
 .faq-item {
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .faq-question-container {
   display: flex;
-  justify-content: space-between; /* Align items to the edges of the container */
-  align-items: center; /* Align items vertically centered */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .faq-question {
   margin: 0;
-  flex-grow: 1; /* Allows the question to take up the remaining space */
+  flex-grow: 1;
 }
 
 .transparent-button {
   background-color: transparent; /* Makes the button background transparent */
   border: none; /* Removes the border */
   cursor: pointer; /* Changes the cursor to pointer on hover */
-  margin-right: 65px; /* Remove padding to ensure button size fits the image */
+  margin-right: 160px; /* Remove padding to ensure button size fits the image */
   font-size: 0; /* Remove font size if no text is used */
 }
 
-
 #puzzle {
+  position: absolute;
+  margin-top: 13%;
+  margin-left: -65%;
   width: 70px;
-  height: 90px;
-  position: relative;
-  top: 30%;
-  left: 12%;
 }
 
 #tower {
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 60%;
   width: 70px;
-  height: 180px;
-  position: relative;
-  top: 60%;
-  left: 85%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .faq-heading h1 {
+    font-size: 40px;
+  }
+
+  .faq-container {
+    max-width: 500px;
+    width: 95%;
+    position: relative;
+    left: 10px;
+  }
+  .faq-question-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq-content p {
+    color: black;
+    padding-top: 1px;
+    width: 100%;
+    padding-bottom: 4px;
+    overflow: hidden;
+    transition: height 0.3s ease, padding 0.3s ease;
+    font-weight: lighter;
+  }
+  .faq-line {
+    width: 100%;
+    height: 2px;
+    background-color: #e490b7;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .transparent-button {
+    background-color: transparent; /* Makes the button background transparent */
+    border: none; /* Removes the border */
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+    position: relative;
+    left: 34%;
+  }
+  #curvyline {
+    width: 200px;
+    position: relative;
+    top: 90px;
+    left: 10%;
+    padding-bottom: 0;
+  }
+  #puzzle {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: -80%;
+    width: 55px;
+  }
+
+  #tower {
+    position: absolute;
+    margin-top: 55%;
+    margin-left: 83%;
+    width: 45px;
+    height: auto;
+  }
+}
+
+@media (max-width: 580px) {
+  .faq-heading h1 {
+    font-size: 30px;
+  }
+
+  .faq-container {
+    max-width: 450px;
+    width: 95%;
+  }
+  .faq-question-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq-content p {
+    color: black;
+    padding-top: 1px;
+    width: 90%;
+    padding-bottom: 4px;
+    overflow: hidden;
+    transition: height 0.3s ease, padding 0.3s ease;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  .faq-line {
+    width: 90%;
+    height: 2px;
+    background-color: #e490b7;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .transparent-button {
+    background-color: transparent; /* Makes the button background transparent */
+    border: none; /* Removes the border */
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+    position: relative;
+    left: 28%;
+  }
+  #curvyline {
+    width: 150px;
+    position: relative;
+    top: 75px;
+    left: 10%;
+    padding-bottom: 0;
+  }
+  #puzzle {
+    position: absolute;
+    margin-top: 39%;
+    margin-left: -85%;
+    width: 30px;
+  }
+
+  #tower {
+    position: absolute;
+    margin-top: 60%;
+    margin-left: 75%;
+    width: 30px;
+    height: auto;
+  }
 }

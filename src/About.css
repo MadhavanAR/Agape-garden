@@ -1,162 +1,373 @@
 /*about*/
 .About {
-    background-color: #decdff;
-  }
-  .about-container {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 75px;
-    display: flex;
-  }
+  background-color: #decdff;
+}
+.about-container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 75px;
+  display: flex;
+}
+.about-text {
+  width: 760px;
+  padding-bottom: 0px;
+}
+.about-text h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.about-text P {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  word-spacing: 5px;
+  line-height: 35px;
+  text-align: justify;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.about-image {
+  position: absolute;
+  width: 20%;
+  top: 120px;
+  left: 65%;
+}
+.about-image img {
+  width: 100%;
+}
+.about-container2 {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+}
+
+/*mission*/
+.mission {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.mission-container {
+  width: 995px;
+  height: 320px;
+  border: #0c0c0c solid;
+  border-radius: 20px;
+  display: flex;
+}
+
+.mission-image img {
+  padding-top: 15%;
+  width: 400px;
+  height: 200px;
+}
+.mission-text {
+  width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mission-text h3 {
+  margin-top: 30px;
+  margin-bottom: 3px;
+  font-size: 36px;
+  font-weight: 600;
+}
+.mission-text p {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 35px;
+}
+.mission #line {
+  height: 108px;
+  width: 117px;
+  padding-top: 10%;
+}
+
+/*vision*/
+.vision {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.vision-container {
+  width: 995px;
+  height: 320px;
+  border: #0c0c0c solid;
+  border-radius: 20px;
+  display: flex;
+}
+
+.vision-image img {
+  padding-top: 15%;
+  width: 400px;
+  height: 200px;
+}
+.vision-text {
+  width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.vision-text h3 {
+  margin-top: 30px;
+  margin-bottom: 3px;
+  font-size: 36px;
+  font-weight: 600;
+}
+.vision-text p {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 35px;
+}
+.vision #green-star {
+  height: 107px;
+  width: 100px;
+  padding-top: 17%;
+  padding-right: 10px;
+}
+
+/*awards*/
+
+.award {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.award-container {
+  width: 995px;
+  height: 320px;
+  border: #0c0c0c solid;
+  border-radius: 20px;
+  display: flex;
+}
+
+.award-image img {
+  padding-top: 15%;
+  width: 400px;
+  height: 200px;
+}
+.award-text {
+  width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.award-text h3 {
+  margin-top: 30px;
+  margin-bottom: 3px;
+  font-size: 36px;
+  font-weight: 600;
+}
+.award-text p {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 35px;
+}
+.award #pink-star {
+  height: 86px;
+  width: 86px;
+  padding-top: 10%;
+  padding-left: 10px;
+}
+@media (max-width: 768px) {
   .about-text {
     width: 760px;
-    padding-bottom: 0px;
   }
   .about-text h1 {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 600;
+  }
+  .about-text {
+    width: 100%;
+  }
+  .about-text1 {
+    max-width: 65%;
   }
   .about-text P {
     font-family: "Inter", sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: lighter;
-    word-spacing: 5px;
+    word-spacing: 3px;
     line-height: 35px;
     text-align: justify;
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100%;
   }
-  .about-container2 {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 40px;
+  .about-image {
+    width: 30%;
   }
-  
-  /*mission*/
-  .mission {
-    display: flex;
-    padding-top: 25px;
-    padding-bottom: 25px;
+  .about-image img {
+    width: 100%;
   }
   .mission-container {
-    width: 995px;
-    height: 320px;
-    border: #0c0c0c solid;
-    border-radius: 20px;
-    display: flex;
+    width: 50%; /* Make it responsive */
+    height: auto; /* Let height adjust based on content */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 10px; /* Reduce padding */
   }
-  
+
   .mission-image img {
-    padding-top: 15%;
-    width: 400px;
-    height: 200px;
+    width: 70%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    padding-top: 5%; /* Adjust padding */
   }
+
   .mission-text {
-    width: 520px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%; /* Full width */
+    margin: 10px 0; /* Adjust margin */
+    font-size: 0.5rem;
+    text-align: justify;
   }
+
   .mission-text h3 {
-    margin-top: 30px;
-    margin-bottom: 3px;
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 24px; /* Smaller font size */
+    margin-top: 15px; /* Adjust margin */
   }
+
   .mission-text p {
-    font-size: 20px;
-    font-weight: lighter;
-    line-height: 35px;
+    font-size: 16px; /* Smaller font size */
+    line-height: 25px; /* Adjust line height */
   }
+
   .mission #line {
-    height: 108px;
-    width: 117px;
-    padding-top: 10%;
-  }
-  
-  /*vision*/
-  .vision {
-    display: flex;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    height: 80px; /* Adjust line height for smaller screens */
+    width: 100px; /* Adjust line width */
+    padding-top: 5%; /* Adjust padding */
   }
   .vision-container {
-    width: 995px;
-    height: 320px;
-    border: #0c0c0c solid;
-    border-radius: 20px;
-    display: flex;
+    width: 50%; /* Make it responsive */
+    height: auto; /* Let height adjust based on content */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 10px; /* Reduce padding */
   }
-  
+
+  .vision-image {
+    width: 100%;
+    margin-left: 28%; /* Keep image to the right */
+  }
   .vision-image img {
-    padding-top: 15%;
-    width: 400px;
-    height: 200px;
+    width: 70%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    padding-top: 5%; /* Adjust padding */
   }
+
   .vision-text {
-    width: 520px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%; /* Full width */
+    margin: 10px 0; /* Adjust margin */
+    text-align: justify;
   }
+
   .vision-text h3 {
-    margin-top: 30px;
-    margin-bottom: 3px;
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 24px; /* Smaller font size */
+    margin-top: 10px; /* Adjust margin */
   }
+
   .vision-text p {
-    font-size: 20px;
-    font-weight: lighter;
-    line-height: 35px;
+    font-size: 16px; /* Smaller font size */
+    line-height: 25px; /* Adjust line height */
   }
+
   .vision #green-star {
-    height: 107px;
-    width: 100px;
-    padding-top: 17%;
-    padding-right: 10px;
-  }
-  
-  /*awards*/
-  
-  .award {
-    display: flex;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    height: 80px; /* Adjust height for smaller screens */
+    width: 80px; /* Adjust width */
+    padding-top: 5%; /* Adjust padding */
+    padding-right: 5px; /* Adjust padding */
   }
   .award-container {
-    width: 995px;
-    height: 320px;
-    border: #0c0c0c solid;
-    border-radius: 20px;
-    display: flex;
+    width: 50%; /* Make it responsive */
+    height: auto; /* Let height adjust based on content */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 10px; /* Reduce padding */
   }
-  
+
+  .award-image {
+    margin-left: auto; /* Keep image to the right */
+    margin-right: 0; /* Remove right margin */
+  }
+
   .award-image img {
-    padding-top: 15%;
-    width: 400px;
-    height: 200px;
+    width: 70%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    padding-top: 5%; /* Adjust padding */
   }
+
   .award-text {
-    width: 520px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%; /* Full width */
+    margin: 10px 0; /* Adjust margin */
+    text-align: justify;
   }
+
   .award-text h3 {
-    margin-top: 30px;
-    margin-bottom: 3px;
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 28px; /* Smaller font size */
+    margin-top: 20px; /* Adjust margin */
   }
+
   .award-text p {
-    font-size: 20px;
-    font-weight: lighter;
-    line-height: 35px;
+    font-size: 16px; /* Smaller font size */
+    line-height: 25px; /* Adjust line height */
   }
+
   .award #pink-star {
-    height: 86px;
-    width: 86px;
-    padding-top: 10%;
-    padding-left: 10px;
+    height: 70px; /* Adjust height for smaller screens */
+    width: 70px; /* Adjust width */
+    padding-top: 5%; /* Adjust padding */
+    padding-left: 5px; /* Adjust padding */
   }
-  
+}
+@media (max-width: 580px) {
+  .mission-container,
+  .vision-container,
+  .award-container {
+    width: 100%; /* Make it responsive */
+    height: auto; /* Let height adjust based on content */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .mission-image,
+  .vision-image,
+  .award-image {
+    margin-left: auto; /* Keep image to the right */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .mission-image img,
+  .vision-image img,
+  .award-image img {
+    width: 50%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    padding-top: 5%; /* Adjust padding */
+  }
+  .vision-image {
+    margin-left: 48%; /* Keep image to the right */
+  }
+  .mission-text,
+  .vision-text,
+  .award-text {
+    width: 100%; /* Full width */
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  .mission-text h3,
+  .vision-text h3,
+  .award-text h3 {
+    font-size: 24px; /* Smaller font size */
+    margin-top: 15px; /* Adjust margin */
+  }
+
+  .mission-text p,
+  .vision-text p,
+  .award-text p {
+    font-size: 14px; /* Smaller font size */
+    line-height: 22px; /* Adjust line height */
+    text-align: justify;
+  }
+
+  .mission #line,
+  .vision #green-star,
+  .award #pink-star {
+    height: 60px; /* Adjust height for smaller screens */
+    width: 60px; /* Adjust width */
+    padding-top: 5%; /* Adjust padding */
+  }
+}

@@ -4,7 +4,7 @@ const Features = forwardRef((props, ref) =>{
   return (
     <section ref={ref}>
     <div className="features-container" id="Features">
-      <div className="heading">
+      <div className="feature-heading">
       <img src='./images/strikeline.png' alt='strikeline' id='strikeline' />
       <h1>
           <span style={{ color: "black" }}>Agape </span>

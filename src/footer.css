@@ -89,65 +89,86 @@
   font-weight: lighter;
   font-size: 20px;
 }
-
+.map-container {
+  position: absolute; /* Allows positioning within the footer */
+  bottom: 40%; /* Adjust this value as needed */
+  right: 10%; /* Adjust this value as needed */
+  z-index: 1; /* Ensure it appears above other content if necessary */
+}
+.footer{
+  position: relative;
+}
+.map-image {
+  width: 100%; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+}
 /* Media Queries for Mobile Views */
 @media (max-width: 768px) {
   .footer-container {
-      width: 100%;
-      padding-top: 20px; /* Adjust padding for mobile view */
+    width: 100%;
+    padding-top: 20px; /* Adjust padding for mobile view */
   }
 
   .logo img {
-      width: 80%; /* Shrink logo to 80% of its original size */
-      max-width: 150px; /* Optional: Set a max width */
+    width: 80%; /* Shrink logo to 80% of its original size */
+    max-width: 150px; /* Optional: Set a max width */
+  }
+
+  .social-media {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    margin-top: -10px; /* Adjust margin to move it closer to the logo */
   }
 
   .social-media img {
-      height: 24px; /* Shrink icon size */
-      width: 24px; /* Shrink icon size */
-      padding: 8px; /* Adjust padding */
+    height: 24px; /* Shrink icon size */
+    width: 24px; /* Shrink icon size */
+    padding: 8px; /* Adjust padding */
   }
 
   .quick-links {
-      padding-left: 5%; /* Less padding for mobile */
-      width: auto; /* Adjust width */
-      padding-right: 5%;
+    padding-left: 5%; /* Less padding for mobile */
+    width: auto; /* Adjust width */
+    padding-right: 5%;
   }
 
-  .address {
-      width: auto; /* Adjust width */
+  .address-map-container {
+    flex-direction: column; /* Stack vertically on smaller screens */
+    align-items: center; /* Center items */
   }
+
+  .map-container {
+    display: none;
+  }
+
 }
 
-@media (max-width: 540px) {
+@media (max-width: 580px) {
   .footer-container {
-      font-size: 14px; /* Slightly smaller font size */
-      padding-top: 15px; /* Less padding for smaller screens */
+    width: 100%;
+    padding-top: 20px; /* Same padding as 768px for consistency */
   }
 
   .logo img {
-      width: 70%; /* Shrink logo to 70% of its original size */
-      max-width: 120px; /* Optional: Set a max width for smaller screens */
-      margin-left: 5px;
+    width: 80%; /* Same width as 768px */
+    max-width: 150px; /* Same max width */
   }
 
   .social-media img {
-      height: 20px; /* Further shrink icon size */
-      width: 20px; /* Further shrink icon size */
-      padding: 6px; /* Adjust padding */
+    height: 24px; /* Same size as 768px */
+    width: 24px; /* Same size as 768px */
+    padding: 8px; /* Same padding as 768px */
   }
 
   .quick-links {
-      padding-left: 2%; /* Less padding */
-      padding-right: 5%;
-
+    padding-left: 5%; /* Same padding as 768px */
+    padding-right: 5%; /* Same padding as 768px */
+    width: auto; /* Adjust width */
   }
 
-  .address {
-      width: auto; /* Adjust width */
-  }
-
-  .bottom {
-      font-size: 18px; /* Slightly smaller text for bottom */
+  .address-map-container {
+    flex-direction: column; /* Stack vertically on smaller screens */
+    align-items: center; /* Center items */
   }
 }

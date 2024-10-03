@@ -23,7 +23,7 @@
   width: 138px; /* Keep your width */
   height: 20px; /* Keep your height */
   left:7%; /* Center horizontally */
-  bottom: 20px; /* Position below the heading */
+  bottom: 29px; /* Position below the heading */
 }
 
 .adm-details {
@@ -124,7 +124,10 @@ input {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 580px) {
+  #admin-heading h1{
+    font-size: 30px
+  }
   .admission-main {
     padding: 10px; /* Reduce padding */
   }
@@ -165,6 +168,7 @@ input {
   }
   .adm-strike{
     position: relative;
-    bottom: 15px;
+    left: 50%;
+    width: 20%;
   }
 }
