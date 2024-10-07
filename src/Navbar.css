@@ -141,12 +141,12 @@
   display: block;
   color: black;
   background-color: #eb81b3;
+  border-radius: 150px;
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
   padding: 20px 20px;
   margin: 5px 0; /* Add margin to create space between items */
-  border-bottom: #ddd solid 1px;
   text-align: center;
 }
 

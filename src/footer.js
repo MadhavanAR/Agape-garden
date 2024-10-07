@@ -10,7 +10,14 @@ export default function Footer() {
             <div className="logo">
               <img src="./images/logo.png" alt="img"></img>
               <div className="social-media">
+                <a href="https://www.facebook.com/agapegarden300/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button id="footer-fb">
                 <img src="./motion/fb.png" alt="img"></img>
+                </button>
+              </a>
                 <img src="./motion/insta.png" alt="img"></img>
                 <img src="./motion/whatsapp.png" alt="img"></img>
               </div>
@@ -42,7 +49,15 @@ export default function Footer() {
             <p> Copyright © Agape Garden. All rights reserved.</p>
           </div>
           <div className="map-container">
-            <img src="./images/map.png" alt="Map" className="map-image" />
+            <a
+              href="https://www.google.co.in/maps/place/Agape+Garden+Play+School+%26+Day+Care+Centre/@12.9472781,80.1969516,17z/data=!3m1!4b1!4m6!3m5!1s0x3a525dcdf26b952d:0x126e2ec396280c4b!8m2!3d12.9472781!4d80.1995265!16s%2Fg%2F11c1mw2m_8?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button id="footer-map">
+                <img src="./images/map.png" alt="Map" className="map-image" />
+              </button>
+            </a>
           </div>
         </div>
       </div>

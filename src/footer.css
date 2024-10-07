@@ -95,13 +95,32 @@
   right: 10%; /* Adjust this value as needed */
   z-index: 1; /* Ensure it appears above other content if necessary */
 }
-.footer{
+.footer {
   position: relative;
 }
 .map-image {
   width: 100%; /* Set the desired width */
   height: auto; /* Maintain aspect ratio */
 }
+#footer-map:hover {
+  cursor: pointer;
+}
+#footer-map:focus {
+  outline: none; /* Remove outline when focused */
+}
+#footer-fb {
+  background-color: transparent; /* Makes the button background transparent */
+  border: none; /* Removes the border */
+}
+
+#footer-fb:hover {
+  cursor: pointer;
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+#footer-fb:focus {
+  outline: none; /* Remove outline when focused */
+}
+
 /* Media Queries for Mobile Views */
 @media (max-width: 768px) {
   .footer-container {
@@ -141,7 +160,6 @@
   .map-container {
     display: none;
   }
-
 }
 
 @media (max-width: 580px) {
