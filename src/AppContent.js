@@ -7,7 +7,7 @@ import ParentSpeak from "./ParentSpeak"; // Ensure this is imported
 import Faq from "./Faq";
 import Admission from "./Admission";
 import Gallery from "./Gallery";
-import Footer from "./Footer";
+import Footer from "./footer";
 import PicFlowGallery from "./PicFlowGallery";
 import Readmore from "./Readmore";
 
