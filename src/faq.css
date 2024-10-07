@@ -194,9 +194,10 @@
   }
   #curvyline {
     width: 150px;
+    height: auto;
     position: relative;
-    top: 75px;
-    left: 10%;
+    top: 70px;
+    left: 15%;
     padding-bottom: 0;
   }
   #puzzle {
