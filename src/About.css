@@ -371,3 +371,18 @@
     padding-top: 5%; /* Adjust padding */
   }
 }
+@media (max-width: 393px) {
+  .about-text h1 {
+    font-size: 20px;
+  }
+  .about-text P {
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+    word-spacing: 2px;
+    line-height: 35px;
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

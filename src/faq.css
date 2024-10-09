@@ -34,7 +34,6 @@
   text-align: justify;
   margin: 20px 0;
 }
-
 .faq-content p {
   color: black;
   padding-top: 2px;
@@ -211,6 +210,72 @@
     position: absolute;
     margin-top: 60%;
     margin-left: 75%;
+    width: 30px;
+    height: auto;
+  }
+}
+@media (max-width: 393px) {
+  .faq-container {
+    max-width: 400px;
+    width: 90%;
+  }
+
+  .faq-heading h1 {
+    font-size: 25px;
+  }
+  .faq-content {
+    text-align: justify;
+    margin: 10px 0;
+    width: 120%;
+  }
+
+  .faq-content p {
+    color: black;
+    padding-top: 1px;
+    width: 75%;
+    padding-bottom: 4px;
+    overflow: hidden;
+    transition: height 0.3s ease, padding 0.3s ease;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  .faq-line {
+    width: 75%;
+    height: 2px;
+    background-color: #e490b7;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .transparent-button {
+    background-color: transparent; /* Makes the button background transparent */
+    border: none; /* Removes the border */
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+    position: relative;
+    left: 15%;
+  }
+  .faq-question-container img {
+    width: 25px;
+  }
+
+  #curvyline {
+    width: 120px;
+    height: auto;
+    position: relative;
+    top: 60px;
+    left: 15%;
+    padding-bottom: 0;
+  }
+  #puzzle {
+    position: absolute;
+    margin-top: 30%;
+    margin-left: -85%;
+    width: 30px;
+  }
+
+  #tower {
+    position: absolute;
+    margin-top: 85%;
+    margin-left: 84%;
     width: 30px;
     height: auto;
   }

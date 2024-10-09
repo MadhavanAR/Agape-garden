@@ -3,5 +3,4 @@ body {
   font-family: "Inter", sans-serif;
   background: #feeef9;
   font-weight: 600;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
 }

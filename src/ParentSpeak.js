@@ -5,7 +5,7 @@ import "./parent-speak.css";
 
 const arr = [
   {
-    img: "./images/profile-pic.png",
+    img: "./profile pictures/blank-pfp.webp",
     name: "Arjun B",
     review:
       "Agape Garden has been a fantastic choice for our son. He loves going to school every day, thanks to the caring teachers and caregivers. We've seen great improvements in his social skills, activities, and academics. Huge thanks to all the teachers, especially Angel Priya, Amala and Anita for their exceptional dedication.",

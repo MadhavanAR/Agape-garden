@@ -65,39 +65,38 @@
   padding-top: 15%;
 }
 
-
 /* Media Query for Mobile View */
 @media (max-width: 768px) {
   .feature-heading {
-      width: 90%; /* Adjust width for smaller screens */
-      margin-left: auto;
-      margin-right: auto;
+    width: 90%; /* Adjust width for smaller screens */
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .feature-cards {
-      overflow-x: auto; /* Enable horizontal scrolling for cards */
-      display: flex; /* Set to flex for horizontal layout */
-      flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling for cards */
+    display: flex; /* Set to flex for horizontal layout */
+    flex-wrap: nowrap; /* Prevent wrapping */
   }
 
   .row {
-      flex: 0 0 auto; /* Prevent the row from shrinking */
-      margin-bottom: 20px; /* Add spacing between rows */
+    flex: 0 0 auto; /* Prevent the row from shrinking */
+    margin-bottom: 20px; /* Add spacing between rows */
   }
 
   .card {
-      width: 45%; /* Adjust width for 2 columns */
-      margin-right: 10px; /* Space between cards */
+    width: 45%; /* Adjust width for 2 columns */
+    margin-right: 10px; /* Space between cards */
   }
 
   /* Show only 2 rows initially */
-  .feature-cards .row:nth-child(n+3) {
-      display: none; /* Hide rows beyond the second */
+  .feature-cards .row:nth-child(n + 3) {
+    display: none; /* Hide rows beyond the second */
   }
 }
 @media (max-width: 580px) {
-  .feature-heading h1{
-      font-size: 30px;
+  .feature-heading h1 {
+    font-size: 30px;
   }
   #strikeline {
     position: relative;
@@ -108,23 +107,43 @@
   }
 
   .feature-cards {
-      overflow-x: auto; /* Enable horizontal scrolling for cards */
-      display: flex; /* Set to flex for horizontal layout */
-      flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling for cards */
+    display: flex; /* Set to flex for horizontal layout */
+    flex-wrap: nowrap; /* Prevent wrapping */
   }
 
   .row {
-      flex: 0 0 auto; /* Prevent the row from shrinking */
-      margin-bottom: 20px; /* Add spacing between rows */
+    flex: 0 0 auto; /* Prevent the row from shrinking */
+    margin-bottom: 20px; /* Add spacing between rows */
   }
 
   .card {
-      width: 45%; /* Adjust width for 2 columns */
-      margin-right: 10px; /* Space between cards */
+    width: 45%; /* Adjust width for 2 columns */
+    margin-right: 10px; /* Space between cards */
   }
 
   /* Show only 2 rows initially */
-  .feature-cards .row:nth-child(n+3) {
-      display: none; /* Hide rows beyond the second */
+  .feature-cards .row:nth-child(n + 3) {
+    display: none; /* Hide rows beyond the second */
+  }
+}
+@media (max-width: 393px) {
+  .feature-heading {
+    width: 90%; /* Adjust width for smaller screens */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .feature-heading h1 {
+    font-size: 25px;
+  }
+  .feature-heading p{
+    font-size: 1rem;
+  }
+  #strikeline {
+    position: relative;
+    left: 14%;
+    top: 70px;
+    height: 15px;
+    width: 110px;
   }
 }

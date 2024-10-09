@@ -33,7 +33,7 @@ const Faq = forwardRef((props, ref) => {
             {sentences.map(({ id, q, paragraph }) => (
               <div key={id} className="faq-item">
                 <div className="faq-question-container">
-                  <p className="faq-question">{q}</p>
+                  <p className="faq-question" style={{textAlign:"left"}}>{q}</p>
                   <button onClick={() => toggleParagraph(id)} className="transparent-button">
                     {visibleId === id ? (
                       <img src="./images/minus.png" alt="minus" />

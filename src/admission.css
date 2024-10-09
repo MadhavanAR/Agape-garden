@@ -1,4 +1,3 @@
-
 .admission-main {
   text-align: center;
   height: 600px;
@@ -22,7 +21,7 @@
   position: relative;
   width: 138px; /* Keep your width */
   height: 20px; /* Keep your height */
-  left:7%; /* Center horizontally */
+  left: 7%; /* Center horizontally */
   bottom: 29px; /* Position below the heading */
 }
 
@@ -125,8 +124,8 @@ input {
 }
 
 @media (max-width: 580px) {
-  #admin-heading h1{
-    font-size: 30px
+  #admin-heading h1 {
+    font-size: 30px;
   }
   .admission-main {
     padding: 10px; /* Reduce padding */
@@ -163,12 +162,27 @@ input {
     font-size: 18px; /* Smaller heading size */
     margin-left: 20px; /* Adjust margin */
   }
-  .admission-main h1{
+  .admission-main h1 {
     font-size: 1.3rem;
   }
-  .adm-strike{
+  .adm-strike {
     position: relative;
     left: 50%;
     width: 20%;
+  }
+}
+@media (max-width: 393px) {
+  #admin-heading h1 {
+    font-size: 20px;
+  }
+  #adm-strike {
+    position: relative;
+    width: 90px; /* Keep your width */
+    height: 15px; /* Keep your height */
+    left: 7%; /* Center horizontally */
+    bottom: 22px; /* Position below the heading */
+  }
+  .adm-text{
+    font-size: 14px;
   }
 }

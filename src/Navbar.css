@@ -89,31 +89,31 @@
 }
 
 .bar1 {
-  width: 30px;
-  height: 3px;
+  width: 20px;
+  height: 2px;
   background-color: #fc01ff;
   margin: 5px 0;
   transition: 0.3s;
-  margin-left: 25px;
+  margin-left: 15px;
   margin-top: 15px;
 }
 
 .bar2 {
-  width: 40px;
-  height: 3px;
+  width: 28px;
+  height: 2px;
   background-color: #fc01ff;
   margin: 5px 0;
   transition: 0.3s;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 .bar3 {
-  width: 23px;
-  height: 3px;
+  width: 20px;
+  height: 2px;
   background-color: #fc01ff;
   margin: 5px 0;
   transition: 0.3s;
-  margin-left: 25px;
+  margin-left: 15px;
   margin-bottom: 15px;
 }
 
@@ -122,7 +122,7 @@
   position: fixed;
   top: 0;
   left: -250px;
-  width: 250px;
+  width: 200px;
   height: 100%;
   background-color: white;
   border-right: #0c0c0c solid 2px;
@@ -143,7 +143,7 @@
   background-color: #eb81b3;
   border-radius: 150px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: lighter;
   text-decoration: none;
   padding: 20px 20px;
   margin: 5px 0; /* Add margin to create space between items */
@@ -162,6 +162,35 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 78px;
+    border-bottom: #0c0c0c solid 2px;
+    background-color: #feeef9;
+    padding: 0 20px;
+    z-index: 1000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .sidebar a {
+    display: block;
+    color: black;
+    background-color: #eb81b3;
+    border-radius: 150px;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 15px 15px;
+    margin: 5px 0; /* Add margin to create space between items */
+    text-align: center;
+  }
   .navbar-logo {
     display: none;
   }
@@ -197,6 +226,20 @@
   .move-right {
     margin-left: 90%; /* Move logo to the right */
     transition: margin-left 0.3s ease; /* Smooth transition */
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 150px;
+    height: 100%;
+    background-color: white;
+    border-right: #0c0c0c solid 2px;
+    transition: left 0.3s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; /* Adjust to accommodate for logo height */
+    z-index: 1000;
   }
 }
 

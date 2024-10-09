@@ -48,7 +48,7 @@
   max-width: 200px; /* Add a max-width for better control */
   max-width: 150px; /* Set a max-width */
   margin: 0 10px;
-  }
+}
 
 #checkout:hover {
   background-color: #ff1493; /* Darker pink on hover */
@@ -146,10 +146,7 @@
 
   .pscard {
     width: 90%; /* Adjust width for mobile */
-    max-height: 400px; /* Limit the height of the card */
-    height: auto; /* Let height adjust based on content */
-    overflow: hidden; /* Hide overflow content */
-    box-sizing: border-box;
+    max-width: 600px; /* Optional max-width for larger screens */
   }
   .review {
     overflow-y: auto; /* Enable vertical scrolling */
@@ -200,7 +197,7 @@
 
 /* Additional styles for screens 580px or smaller */
 @media (max-width: 580px) {
-  .parent-heading h1{
+  .parent-heading h1 {
     font-size: 30px;
   }
   #speakstrike {
@@ -209,7 +206,7 @@
     width: 100px;
     left: 70px;
   }
-  
+
   .parent-speak-container {
     padding-top: 20px; /* Adjust padding for mobile */
     padding-bottom: 50px; /* Adjust padding for mobile */
@@ -273,5 +270,50 @@
     flex-shrink: 0; /* Prevent the button from shrinking */
     position: sticky; /* Stick the button to the bottom */
     bottom: 0; /* Align it to the bottom */
+  }
+}
+/* Additional styles for screens 389px or smaller */
+@media (max-width: 393px) {
+  .parent-speak-container{
+    width: 100%;
+  }
+  .parent-heading h1 {
+    font-size: 25px;
+  }
+  .parent-heading {
+    width: 100%; /* Responsive width */
+    max-width: 400px; /* Ensure it doesn’t exceed a certain width */
+    margin-left: auto;
+    margin-right: auto; /* Center it */
+  }
+  .parent-heading p{
+    font-size: 1rem;
+  }
+  #speakstrike{
+    height: 15px;
+    position: relative;
+    left: 50px;
+    width: 20%;
+    top: 65px;
+  }
+  .pscard {
+    width: 270px; /* Set fixed width */
+    height: auto; /* Set fixed height */
+  }
+  #left-button,
+  #right-button {
+    width: 50px;
+    height: 20px;
+  }
+  #left-button{
+    position: relative;
+    left: 2.8%;
+  }
+  #right-button{
+    position: relative;
+    right: 4%;
+  }
+  #checkout{
+    height: 30px;
   }
 }
